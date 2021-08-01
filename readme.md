@@ -7,7 +7,7 @@
   
 还在为Live2D复杂的配置而苦恼吗？快来试试这款萌萌哒 Live2D API 吧！
 
-![aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ](https://91.90.194.171:8443/api/Live2D/start/demo.gif)
+![aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ](https://raw.githubusercontent.com/xiarimangguo/aLive2D/main/api/Live2D/demo.gif)
 
 #### 目录 *(੭*ˊᵕˋ)੭*ଘ ####
 
