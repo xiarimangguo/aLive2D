@@ -3,6 +3,20 @@
 
 本API目前为纯静态编写，你可以很轻松地自建API，也可以将其部署在CDN上，无论是云服务器还是虚拟主机都可以轻松搭建...  
 
+#### 目录 *(੭*ˊᵕˋ)੭*ଘ ####
+
+* [壹·开箱啦](#开箱啦)
+    * [¿?～坑～无处不在！](#¿?～坑～无处不在！)
+        * [跨域这位“老朋友”又来了！！！](#跨域这位“老朋友”又来了！！！)
+        * [为什么模型文件404了？明明在这里的！](#为什么模型文件404了？明明在这里的！)
+* [贰·Let's go](#let's-go)
+    * [List.js](#list.js)
+        * [数组characters～存放url](#数组characters～存放url)
+        * [tellMoe函数～对应关系](#tellMoe函数～对应关系)
+        * [moeNum函数～定义分组](#moeNum函数～定义分组)
+    * [LAppDefine.js](#lappdefine.js)
+* **[★•叁·添加萌萌哒Live2D模型•★](#添加萌萌哒Live2D模型)**
+
 ## 开箱啦 ##
 
 * 将本项目的源码下载下来，上传到你的服务器根目录，并在html文件中引入以下代码，就可以使用啦！
@@ -31,7 +45,9 @@ Access-Control-Allow-Origin: *
 - **为什么模型文件404了？明明在这里的！**
 请在服务器中为`moc`和`mtn`文件设置正确的`Mime-type` `(Mime类型)`，避免莫名其妙的`404`问题  
 [没有IIS的管理权？尝试通过根目录的`web.config`配置(没有就新建一个)，这是一个xml文件，包含当前目录下的IIS配置信息(请Google “web.config添加Mime类型”)]  
+
     * **`Mime-type`设置如下**
+
     ```
 moc: application/octet-stream
 mtn: application/octet-stream
@@ -46,6 +62,7 @@ mtn: application/octet-stream
 * List.js用来定义模型列表及分组，指定模型名称与配置文件的对应关系
 
 List.js的文件结构如下所示
+
 ```
 var characters = [
     ...
@@ -94,6 +111,7 @@ function moeNum(Grp) {
         };
 };
 ```
+
 ##### 数组characters～存放url #####
 
 * characters用于存放模型的`LAppDefine.js`配置文件url  
@@ -101,19 +119,22 @@ function moeNum(Grp) {
 ##### tellMoe函数～对应关系 #####
 
 * 这里的每一个`case`块都存放着模型与配置文件的对应关系
+
 ```
 case "Lonjingxiaren":
 case "#02001":
     return characters[10];
      break;
 ```
-    * `Lonjingxiaren`是**模型名称**，`#02001`是**模型编号**  
-    * `characters[10]`是该模型对应的**配置文件**  
-    * 在每个`case`块中，**`characters[x]`**中的**`x`**应比上一个`case`块**增加1**，以便与`characters`数组中的url一一对应
+
+* `Lonjingxiaren`是**模型名称**，`#02001`是**模型编号**  
+* `characters[10]`是该模型对应的**配置文件**  
+* 在每个`case`块中，**`characters[x]`**中的**`x`**应比上一个`case`块**增加1**，以便与`characters`数组中的url一一对应
 
 ##### moeNum函数～定义分组 #####
 
 * 这里的每一个`case`块都存放着模型的分组信息
+
 ```
 case "Shiwuyu":
 case "#02":
@@ -122,10 +143,11 @@ case "#02":
     return moe_num;
      break;
 ```
-    * `Shiwuyu`是**分组名称**，`#02`是**分组编号**  
-    * `moe_num[0]`用于设置分组的**起始位置**(填写`characters`数组下标)
-    * `moe_num[1]`用于设置分组的**结束位置**(填写`characters`数组下标)
-    * 将要分成一组的模型的`case`在`tellMoe`函数中**放在一起**，然后在这里配置，你就定义好一个新的分组啦
+
+* `Shiwuyu`是**分组名称**，`#02`是**分组编号**  
+* `moe_num[0]`用于设置分组的**起始位置**(填写`characters`数组下标)
+* `moe_num[1]`用于设置分组的**结束位置**(填写`characters`数组下标)
+* 将要分成一组的模型的`case`在`tellMoe`函数中**放在一起**，然后在这里配置，你就定义好一个新的分组啦
 
 #### LAppDefine.js ####
 
@@ -134,6 +156,7 @@ case "#02":
 * 这个清晰度配置是我新增的，注释里标明了使用方法呐
 
 文件结构如下所示
+
 ```
             var LAppDefine = {   
                 // 调试，true时会在console里显示日志
@@ -250,14 +273,22 @@ case "#02":
 #### 按以下步骤操作吧 ####
 
 1. 将存放模型的文件夹复制到`model`文件夹中
-2. 在api/Live2D文件夹下新建一个文件夹，命名为模型所在分组名，进入该文件夹，新建一个文件夹，命名为模型的名称
-3. 如分组文件夹已存在，只须新建一个文件夹，命名为模型的名称即可
+![第1步](https://91.90.194.171:8443/api/Live2D/start/1.gif)
+2. 如果没有**`model.json`**，要配置一下**`model.json`**，在**`expressions`**一节中设置模型表情，需与**`expression`文件夹**一致，或者找到**`*.exp.json`文件所在的文件夹**一般就是存放模型**表情**的文件夹，在**`motions`**一节中设置模型动作文件，需与**`action`或`motion`文件夹**一致，或者找到**`*.mtn`文件所在的文件夹**一般就是存放模型**动作**的文件夹[此步骤仅作参考哦，一般来说模型文件夹中会附带`model.json`的]
+![第2步](https://91.90.194.171:8443/api/Live2D/start/2.gif)
+**这样配置`model.json`**
+![第3步](https://91.90.194.171:8443/api/Live2D/start/3.gif)
+3.  在api/Live2D文件夹下新建一个文件夹，命名为模型所在分组名，进入该文件夹，新建一个文件夹，命名为模型的名称  
+[如分组文件夹已存在，只须新建一个文件夹，命名为模型的名称即可]
+![第4步](https://91.90.194.171:8443/api/Live2D/start/4.gif)
 4. 将`LAppDefine.js`复制到该文件夹，更改`models`参数，指向模型配置文件`model.json`的url
+![第5步](https://91.90.194.171:8443/api/Live2D/start/5.gif)
 5. 在list.js中的`characters`数组中添加`LAppDefine.js`的url
 6. 在`tellMoe`函数中新增一个`case`，并定义模型名称及编号，以及对应的配置文件
 7. 在`moeNum`函数中更新对应分组的分组范围
+![第6步](https://91.90.194.171:8443/api/Live2D/start/6.gif)
 8. 更改`aLive2D`函数的`Model`参数，模型就会出现在网页上啦！
-
+![第7步](https://91.90.194.171:8443/api/Live2D/start/7.gif)
 如果还是不会操作，请参考已配置好的模型呐，结合上面的步骤，很快就可以理解的！
 
 本API附带的60+开箱即用的模型都是很不错的，你也可以从中挑选喜欢的模型使用呀～
