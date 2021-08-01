@@ -1,0 +1,76 @@
+{
+    "expressions":[
+    ],
+    "hit_areas_custom":{
+        "head_x":[-0.3, 1.4],
+        "head_y":[0.3, 0.7],
+        "body_x":[-0.4, 0.7],
+        "body_y":[0.4, -0.9]
+    },
+    "model":"model.moc",
+    "motions":{
+        "idle":[
+            {
+                "file":"action/aonao.mtn"
+            },
+            {
+                "file":"action/chijing.mtn"
+            },
+            {
+                "file":"action/haixiu.mtn"
+            },
+            {
+                "file":"action/idle.mtn"
+            },
+            {
+                "file":"action/kaixin.mtn"
+            },
+            {
+                "file":"action/qifen.mtn"
+            },
+            {
+                "file":"action/qinwen.mtn"
+            },
+            {
+                "file":"action/shangxin.mtn"
+            },
+            {
+                "file":"action/sikao.mtn"
+            }
+        ],
+        "tap_body":[
+            {
+                "file":"action/aonao.mtn"
+            },
+            {
+                "file":"action/chijing.mtn"
+            },
+            {
+                "file":"action/haixiu.mtn"
+            },
+            {
+                "file":"action/idle.mtn"
+            },
+            {
+                "file":"action/kaixin.mtn"
+            },
+            {
+                "file":"action/qifen.mtn"
+            },
+            {
+                "file":"action/qinwen.mtn"
+            },
+            {
+                "file":"action/shangxin.mtn"
+            },
+            {
+                "file":"action/sikao.mtn"
+            }
+        ]
+    },
+    "textures":[
+        "texture_00.png"
+    ],
+	"physics":"moc/physics.json",
+    "version":"Sample 1.0.0"
+}

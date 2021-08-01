@@ -1,0 +1,58 @@
+{
+    "expressions":[
+        {
+            "file":"expression/chijing.exp.json",
+            "name":"chijing.exp.json"
+        },
+        {
+            "file":"expression/haixiu.exp.json",
+            "name":"haixiu.exp.json"
+        },
+        {
+            "file":"expression/kaixin.exp.json",
+            "name":"kaixin.exp.json"
+        },
+        {
+            "file":"expression/idle.exp.json",
+            "name":"idle.exp.json"
+        },
+        {
+            "file":"expression/nanguo.exp.json",
+            "name":"nanguo.exp.json"
+        },
+        {
+            "file":"expression/shengqi.exp.json",
+            "name":"shengqi.exp.json"
+        }
+    ],
+    "hit_areas_custom":{
+        "head_x":[-0.3, 1.4],
+        "head_y":[0.3, 0.7],
+        "body_x":[-0.4, 0.7],
+        "body_y":[0.4, -0.9]
+    },
+    "model":"model.moc",
+    "motions":{
+        "idle":[
+            {
+                "file":"action/idle.mtn"
+            },
+            {
+                "file":"action/sikao.mtn"
+            }
+        ],
+        "tap_body":[
+            {
+                "file":"action/idle.mtn"
+            },
+            {
+                "file":"action/sikao.mtn"
+            }
+        ]
+    },
+    "textures":[
+        "texture_00.png"
+    ],
+	"physics":"moc/physics.json",
+    "version":"Sample 1.0.0"
+}
