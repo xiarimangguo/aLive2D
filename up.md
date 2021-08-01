@@ -49,8 +49,8 @@ Access-Control-Allow-Origin: *
     * **`Mime-type`设置如下**
 
     ```
-moc: application/octet-stream
-mtn: application/octet-stream
+    moc: application/octet-stream
+    mtn: application/octet-stream
     ```
 
 ## Let's go ##
