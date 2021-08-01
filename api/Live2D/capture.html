@@ -1,0 +1,27 @@
+﻿<html>
+    <head>
+    	<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script>
+        <title>message</title>
+		<link rel="stylesheet" type="text/css" href="message.css" >
+    </head>
+    <body onload="InitLive2D();">
+        <audio id="aAudio"></audio>
+        <div style="position:fixed;bottom:0px;right:100px;">
+        <div class="message"></div>
+        <canvas id="aLive2D" width="240px" height="400px" style="position:fixed;bottom:0px;right:100px;"></canvas>
+        </div>
+        <script type="text/javascript">
+            var host = "https://91.90.194.171:8443";
+            var message_Path = '/'
+            var home_Path = 'https://91.90.194.171:8443/'  //此处修改为你的域名，必须带斜杠
+        </script>
+        <!-- Live2D Library -->
+        <script src="js/live2d.min.js"></script>
+        <script src="api/Live2D/shiwuyu/100026_yipinguo/LAppDefine.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/message.js"></script>
+        <script>autoClarity();</script>
+        <button onclick="captureSample();">Catch Moe!</button>
+    </body>
+</html>

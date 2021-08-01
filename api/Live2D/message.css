@@ -1,0 +1,29 @@
+.message {
+	user-select: none;
+	position: fixed;
+    opacity: 0;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    padding: 7px;
+    top: -440px;
+    left: -275px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 15px 2px rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
