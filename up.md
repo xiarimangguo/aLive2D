@@ -6,16 +6,16 @@
 #### 目录 *(੭*ˊᵕˋ)੭*ଘ ####
 
 * [壹·开箱啦](#开箱啦)
-    * [¿?～坑～无处不在！](#¿?～坑～无处不在！)
-        * [跨域这位“老朋友”又来了！！！](#跨域这位“老朋友”又来了！！！)
-        * [为什么模型文件404了？明明在这里的！](#为什么模型文件404了？明明在这里的！)
-* [贰·Let's go](#let's-go)
-    * [List.js](#list.js)
-        * [数组characters～存放url](#数组characters～存放url)
-        * [tellMoe函数～对应关系](#tellMoe函数～对应关系)
-        * [moeNum函数～定义分组](#moeNum函数～定义分组)
-    * [LAppDefine.js](#lappdefine.js)
-* **[★•叁·添加萌萌哒Live2D模型•★](#添加萌萌哒Live2D模型)**
+    * [¿?～坑～无处不在！](#坑无处不在)
+        * [跨域这位“老朋友”又来了！！！](#跨域这位老朋友又来了)
+        * [为什么模型文件404了？明明在这里的！](#为什么模型文件404了明明在这里的)
+* [贰·Let's go](#lets-go)
+    * [List.js](#listjs)
+        * [数组characters～存放url](#数组characters存放url)
+        * [tellMoe函数～对应关系](#tellMoe函数对应关系)
+        * [moeNum函数～定义分组](#moeNum函数定义分组)
+    * [LAppDefine.js](#lappdefinejs)
+* **[★•叁·添加萌萌哒Live2D模型•★](#添加萌萌哒live2d模型)**
 
 ## 开箱啦 ##
 
@@ -25,33 +25,33 @@
 <script src="https://Your_HostName/api/Live2D/live2d.js"></script>
 <script>aLive2D(Model,Width,Height,Position,X,Y,EnableMsg)</script>
 ```
-* 打开`live2d.js`将其中的**`host`**变量更改为你的主机名(如有端口号，那么端口号也要带)
+* 打开`live2d.js`将**其中的`host`变量**更改为你的主机名(如有端口号，那么端口号也要带)
 
 * 请把`Your_HostName`更换为你的主机名(域名或IP地址)，并配置aLive2D函数
 
 #### ¿?～坑～无处不在！ ####
 
-- **跨域这位“老朋友”又来了！！！**  
-为了防止跨域问题，请为服务器添加以下**`HTTP响应标头`**  
+- ##### 跨域这位“老朋友”又来了！！！ #####  
+为了防止跨域问题，请为服务器添加以下**HTTP响应标头**  
 [设置不了的也不是不能用，只是只能在**你自己**的网站上使用，无法对外提供服务]  
-，并为服务器启用**`https`**访问  
-[尽量吧，实在启用不了就算了，只是你的api只能被**`http`**页面调用]
+，并为服务器**启用`https`访问**  
+[尽量吧，实在启用不了就算了，只是你的api只能**被`http`页面调用**]
 ```
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
 Access-Control-Allow-Origin: *
 ```
 
-- **为什么模型文件404了？明明在这里的！**
+- ##### 为什么模型文件404了？明明在这里的！ #####  
 请在服务器中为`moc`和`mtn`文件设置正确的`Mime-type` `(Mime类型)`，避免莫名其妙的`404`问题  
 [没有IIS的管理权？尝试通过根目录的`web.config`配置(没有就新建一个)，这是一个xml文件，包含当前目录下的IIS配置信息(请Google “web.config添加Mime类型”)]  
 
-    * **`Mime-type`设置如下**
+**`Mime-type`设置如下**
 
-    ```
-    moc: application/octet-stream
-    mtn: application/octet-stream
-    ```
+```
+moc: application/octet-stream
+mtn: application/octet-stream
+```
 
 ## Let's go ##
 
@@ -274,7 +274,7 @@ case "#02":
 
 1. 将存放模型的文件夹复制到`model`文件夹中
 ![第1步](https://91.90.194.171:8443/api/Live2D/start/1.gif)
-2. 如果没有**`model.json`**，要配置一下**`model.json`**，在**`expressions`**一节中设置模型表情，需与**`expression`文件夹**一致，或者找到**`*.exp.json`文件所在的文件夹**一般就是存放模型**表情**的文件夹，在**`motions`**一节中设置模型动作文件，需与**`action`或`motion`文件夹**一致，或者找到**`*.mtn`文件所在的文件夹**一般就是存放模型**动作**的文件夹[此步骤仅作参考哦，一般来说模型文件夹中会附带`model.json`的]
+2. 如果没有`model.json`，要配置一下`model.json`，**在`expressions`一节中设置模型表情**，需与`expression`文件夹一致，或者**找到`*.exp.json`文件所在的文件夹**一般就是存放模型**表情**的文件夹，**在`motions`一节中设置模型动作文件**，需与`action`或`motion`文件夹一致，或者**找到`*.mtn`文件所在的文件夹**一般就是存放模型**动作**的文件夹[此步骤仅作参考哦，一般来说模型文件夹中会附带`model.json`的]
 ![第2步](https://91.90.194.171:8443/api/Live2D/start/2.gif)
 **这样配置`model.json`**
 ![第3步](https://91.90.194.171:8443/api/Live2D/start/3.gif)
