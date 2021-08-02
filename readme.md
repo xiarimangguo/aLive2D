@@ -134,7 +134,7 @@ aLive2D('#02007','240px','400px','Lb','10%','0%',false)
 
 ### 更换模型吧 ###
 
-`Model`参数控制展示的模型，在这里你可以使用你定义的模型名称(如 Haru )，也可以使用你定义的模型编号(如 #01001 )。(提示 : 请在[★•进阶·搭建API•★](https://github.com/xiarimangguo/aLive2D/blob/main/up.md#list.js)中查看关于**list.js**的详细介绍)
+`Model`参数控制展示的模型，在这里你可以使用你定义的模型名称(如 Haru )，也可以使用你定义的模型编号(如 #01001 )。(提示 : 请在[★•进阶·搭建API•★](https://github.com/xiarimangguo/aLive2D/blob/main/up.md#listjs)中查看关于**list.js**的详细介绍)
 
 #### 小伙伴们来啦！ ####
 
@@ -205,7 +205,7 @@ Group(custom,List(#02001,#02007,#02002))
 
 为了更简洁地使用分组，建议在list.js中定义分组，然后以`defined`方式使用它
 
-不过，以`defined`方式在list.js中定义分组，只能将要分组的模型按顺序排在一起[**[★•进阶·搭建API•★](https://github.com/xiarimangguo/aLive2D/blob/main/up.md#list.js)**]，而`redefine`和`custom`方式，可不按顺序自由定义分组，更加灵活。
+不过，以`defined`方式在list.js中定义分组，只能将要分组的模型按顺序排在一起[**[★•进阶·搭建API•★](https://github.com/xiarimangguo/aLive2D/blob/main/up.md#listjs)**]，而`redefine`和`custom`方式，可不按顺序自由定义分组，更加灵活。
 
 #### 使用Random函数和Auto函数 ####
 
