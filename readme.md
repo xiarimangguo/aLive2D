@@ -9,6 +9,8 @@
 
 [![aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ](https://91.90.194.171:8443/api/Live2D/start/demo.png)](https://91.90.194.171/api/Live2D/start/demo.gif)
 
+o(*≧▽≦)ツ一起交流呀～～ [aLive2D聊天室](https://91.90.194.171:2333/)
+
 #### 目录 *(੭*ˊᵕˋ)੭*ଘ ####
 
 * [壹·萌の初见](#萌の初见)
