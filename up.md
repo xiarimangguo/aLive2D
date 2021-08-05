@@ -43,6 +43,7 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
 Access-Control-Allow-Origin: *
 ```
+![跨域设置](https://91.90.194.171:8443/api/Live2D/start/10.gif)
 
 - ##### 为什么模型文件404了？明明在这里的！ #####  
 请在服务器中为`moc`和`mtn`文件设置正确的`Mime-type` `(Mime类型)`，避免莫名其妙的`404`问题  
@@ -54,6 +55,7 @@ Access-Control-Allow-Origin: *
 moc: application/octet-stream
 mtn: application/octet-stream
 ```
+![Mime-type设置](https://91.90.194.171:8443/api/Live2D/start/11.gif)
 
 ## 进阶配置 ##
 
