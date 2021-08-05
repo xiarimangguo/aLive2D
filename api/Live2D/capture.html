@@ -2,6 +2,7 @@
     <head>
     	<script src="//cdn.jsdelivr.net/npm/eruda"></script>
         <script>eruda.init();</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
         <title>message</title>
 		<link rel="stylesheet" type="text/css" href="message.css" >
     </head>
@@ -12,15 +13,15 @@
         <canvas id="aLive2D" width="240px" height="400px" style="position:fixed;bottom:0px;right:100px;"></canvas>
         </div>
         <script type="text/javascript">
-            var host = "https://91.90.194.171:8443";
+            var host = "https://91.90.194.171:8443";  //此处修改为你的域名，不用带斜杠
             var message_Path = '/'
             var home_Path = 'https://91.90.194.171:8443/'  //此处修改为你的域名，必须带斜杠
         </script>
         <!-- Live2D Library -->
-        <script src="js/live2d.min.js"></script>
-        <script src="api/Live2D/shiwuyu/100026_yipinguo/LAppDefine.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/message.js"></script>
+        <script src="/js/live2d.min.js"></script>
+        <script src="/api/Live2D/shiwuyu/100026_yipinguo/LAppDefine.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/message.js"></script>
         <script>autoClarity();</script>
         <button onclick="captureSample();">Catch Moe!</button>
     </body>
