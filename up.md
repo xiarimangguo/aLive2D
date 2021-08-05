@@ -28,7 +28,7 @@
 ![让我们开始吧！](https://91.90.194.171:8443/api/Live2D/start/start.gif)
 * 打开`live2d.js`将**其中的`host`变量**更改为你的主机名(如有端口号，那么端口号也要带)
 ![更改主机名](https://91.90.194.171:8443/api/Live2D/start/8.gif)
-* 请把`Your_HostName`更换为你的主机名(域名或IP地址)，并配置aLive2D函数
+* 请把上面的代码中的`Your_HostName`更换为你的主机名(域名或IP地址)，并配置aLive2D函数
 
 #### ¿?～坑～无处不在！ ####
 
