@@ -29,9 +29,6 @@
         * **[★•进阶·搭建API•★](https://github.com/xiarimangguo/aLive2D/blob/main/up.md)**
 * [肆·萌の感谢](#萌の感谢)
 
-o(*≧▽≦)ツ一起交流呀～～  
-[![aLive2D chat](https://img.shields.io/badge/aLive2D-Chat-blue?style=for-the-badge)](https://91.90.194.171:2333/)
-
 ## 萌の初见 ##
 
 >你好呀！ 我是一只萌萌哒Live2D，很快你就将和我见面啦！ n(\*≧▽≦\*)n  
@@ -282,5 +279,8 @@ Auto()
 [galnetwen/Live2D: 在 Web 上展示 Live2D 吧！](https://github.com/galnetwen/Live2D)
 
 **如果你喜欢这个项目，不要忘记为我点亮star哦！**
+
+**o(\*≧▽≦)ツ一起交流呀～～**  
+[![aLive2D chat](https://img.shields.io/badge/aLive2D-Chat-blue?style=for-the-badge)](https://91.90.194.171:2333/)
 
 >蒙蒙的山，蒙蒙的海，茫茫人海中，萌萌的你o(*≧▽≦)ツ
