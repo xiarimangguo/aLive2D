@@ -5,7 +5,7 @@
             "name":"chijing.exp.json"
         },
         {
-            "file":"expression/kaixin.exp.json",
+            "file":"expression/haixiu.exp.json",
             "name":"haixiu.exp.json"
         },
         {
@@ -13,11 +13,11 @@
             "name":"idle.exp.json"
         },
         {
-            "file":"expression/nanguo.exp.json",
+            "file":"expression/kaixin.exp.json",
             "name":"kaixin.exp.json"
         },
         {
-            "file":"expression/shengqi.exp.json",
+            "file":"expression/nanguo.exp.json",
             "name":"nanguo.exp.json"
         },
         {
