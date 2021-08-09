@@ -279,7 +279,6 @@ Auto()
 [galnetwen/Live2D: 在 Web 上展示 Live2D 吧！](https://github.com/galnetwen/Live2D)
 
 #### o(\*≧▽≦)ツ一起交流呀～～ ####
-(聊天室暂时关闭，因为没有人来...)
 [![aLive2D chat](https://img.shields.io/badge/aLive2D-Chat-blue?style=for-the-badge)](https://91.90.194.171:2333/)
 
 **如果你喜欢这个项目，不要忘记为我点亮star哦！**
