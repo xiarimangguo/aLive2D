@@ -65,6 +65,8 @@ var characters = [
     host+"/api/Live2D/shiwuyu/150039_dzpj_yz/LAppDefine.js",
     host+"/api/Live2D/shiwuyu/100116_neh/LAppDefine.js",
     host+"/api/Live2D/shiwuyu/150051_slyx_xydz/LAppDefine.js",
+    host+"/api/Live2D/shiwuyu/100074_mpt_a/LAppDefine.js",
+    host+"/api/Live2D/shiwuyu/100074_mpt_b/LAppDefine.js",
 ];
 function tellMoe(Moc) {
     switch (Moc) {
@@ -332,6 +334,14 @@ function tellMoe(Moc) {
         case "#02056":
             return characters[65];
              break;
+        case "Mengpotang_a":
+        case "#02057":
+            return characters[66];
+             break;
+        case "Mengpotang_b":
+        case "#02058":
+            return characters[67];
+             break;
         default:
             return characters[0];
              break;
@@ -349,7 +359,7 @@ function moeNum(Grp) {
         case "Shiwuyu":
         case "#02":
             moe_num[0] = 10;
-            moe_num[1] = 65;
+            moe_num[1] = 67;
             return moe_num;
              break;
         default:
