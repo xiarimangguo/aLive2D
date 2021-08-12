@@ -50,6 +50,10 @@
 
 [#02007[一品锅|食物语] - aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ](https://91.90.194.171/api/Live2D/demo.html)
 
+或者...... 来这里看看效果吧～
+
+[夏日芒果の小屋](https://xiarimangguo.github.io/aLive2D/)
+
 悄悄地告诉你，可以使用“[捕获](https://91.90.194.171/api/Live2D/capture.html)”功能来记录我的可爱瞬间呢～
 
 ## 萌の自述 ##
