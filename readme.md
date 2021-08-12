@@ -30,6 +30,8 @@
         * **[★•进阶·搭建API•★](https://github.com/xiarimangguo/aLive2D/blob/main/up.md)**
 * [肆·萌の感谢](#萌の感谢)
 
+在这里阅读，体验更佳呐～ [夏日芒果の小屋](https://xiarimangguo.github.io/aLive2D/)
+
 ## 萌の初见 ##
 
 >你好呀！ 我是一只萌萌哒Live2D，很快你就将和我见面啦！ n(\*≧▽≦\*)n  
