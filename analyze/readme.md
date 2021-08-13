@@ -1,6 +1,61 @@
 # 阅读量统计API #
 
-这是由asp编写而成的一个阅读量统计API，为静态博客及 GitHub Pages 提供阅读量统计功能，可以很方便地在你的网页中使用
+这是由asp编写而成的一个阅读量统计API，为静态博客及 GitHub Pages 提供阅读量统计功能，
+还提供 Github Badge 功能，可以很方便地在你的网页中使用
+
+## 特点 ##
+
+可以为不同的文章分别统计阅读量，只需在你的网页中引入一行脚本即可调用，
+还支持Github仓库的readme阅读量统计，阅读量统计也可以很轻松地进行啦～
+
+## 更新 ##
+
+**支持 Github Badge 模式啦，效果如下所示**
+
+![visitors](https://91.90.194.171/analyze/counter.asp?Datatype=svg&Page=https://github.com/xiarimangguo/aLive2D/tree/sites/analyze)
+
+只需将`Datatype`参数设置为`svg`即可使用啦
+
+你可以复制下面的代码，并将其添加到你的readme中，就可以统计
+阅读量了，别忘了把`Page`参数替换为你的readme的链接
+
+**Markdown示例**
+```
+![visitors](https://91.90.194.171/analyze/counter.asp?Datatype=svg&Page=https://github.com/xiarimangguo/aLive2D/)
+```
+
+除了使用计数器模式外，你也可以使用本API生成自己的Badge，
+可以自定义文字和颜色哦
+
+下面的代码会生成一个浅绿色的 helloworld Badge
+```
+![visitors](https://91.90.194.171/analyze/counter.asp?Datatype=svg&Badge=hello-world-brightgreen&Page=https://github.com/xiarimangguo/aLive2D/)
+```
+
+![Hello World](https://91.90.194.171/analyze/counter.asp?Datatype=svg&Badge=hello-world-brightgreen&Page=https://github.com/xiarimangguo/aLive2D/tree/sites/analyze)
+
+你可以使用`Badge`参数定义你自己的Badge，格式如下
+```
+hello-world-brightgreen
+```
+
+`hello`为Badge前半部分的显示文字，`world`为Badge后半
+部分的显示文字，`brightgreen`为颜色
+
+你也可以这样使用
+```
+visitors-$counter$-blue
+```
+
+这会让计数器显示为蓝色
+
+`$counter$`变量用于调用计数器，它的值为当前文章的阅读量
+
+你可以将`$counter$`变量夹杂在文字中间，像这样使用
+```
+Hello-You're No.$counter$ visitor-yellow
+```
+好啦，就这样吧～
 
 ## 示例 ##
 
