@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://xiarimangguo.github.io/aLive2D/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/DavinciEvans/Imgs-bed@master/gallery/logo.png"> 
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>★•进阶·搭建API•★ - 夏日芒果の小屋</title>
+	<meta name="description" content="aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ 快来向web页面添加可爱的看板娘吧～还在为Live2D复杂的配置而苦恼吗？快来试试这款萌萌哒 Live2D API 吧！">
+	<link rel="canonical" href="https://xiarimangguo.github.io/aLive2D">
+	<meta property="og:locale" content="zh_CN">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ">
+	<meta property="og:description" content="aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ 快来向web页面添加可爱的看板娘吧～还在为Live2D复杂的配置而苦恼吗？快来试试这款萌萌哒 Live2D API 吧！">
+	<meta property="og:url" content="https://xiarimangguo.github.io/aLive2D">
+	<meta property="og:site_name" content="夏日芒果の小屋">
+	<meta property="article:published_time" content="2021-07-31T23:48:40+00:00">
+	<meta property="article:modified_time" content="2021-08-10T18:26:09+00:00">
+	<meta property="og:image" content="./files/background.jpg">
+	<meta property="og:image:width" content="1600">
+	<meta property="og:image:height" content="900">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="作者">
+	<meta name="twitter:data1" content="夏日芒果">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://xiarimangguo.github.io/aLive2D#website","url":"https://xiarimangguo.github.io/aLive2D/","name":"\u590f\u65e5\u8292\u679c\u306e\u5c0f\u5c4b","description":"\u5feb\u6765\u5411\u0077\u0065\u0062\u9875\u9762\u6dfb\u52a0\u53ef\u7231\u7684\u770b\u677f\u5a18\u5427\uff5e","publisher":{"@id":"https://github.com/xiarimangguo"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://xiarimangguo.github.io/aLive2D?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"zh-CN"},{"@type":"ImageObject","@id":"https://xiarimangguo.github.io/aLive2D#primaryimage","inLanguage":"zh-CN","url":"./files/background.jpg","contentUrl":"./files/background.jpg","width":1600,"height":900},{"@type":"WebPage","@id":"https://xiarimangguo.github.io/aLive2D#webpage","url":"https://xiarimangguo.github.io/aLive2D/","name":"\u0061\u004c\u0069\u0076\u0065\u0032\u0044\u0021\u0020\u4e00\u4e2a\u840c\u840c\u54d2\u0020\u004c\u0069\u0076\u0065\u0032\u0044\u0020\u0041\u0050\u0049\u0020\u006f\u0028\u002a\u2267\u25bd\u2266\u0029\u30c4","isPartOf":{"@id":"https://xiarimangguo.github.io/aLive2D#website"},"primaryImageOfPage":{"@id":"https://xiarimangguo.github.io/aLive2D#primaryimage"},"datePublished":"2021-07-31T23:48:40+00:00","dateModified":"2021-08-10T18:26:09+00:00","description":"\u0061\u004c\u0069\u0076\u0065\u0032\u0044\u0021\u0020\u4e00\u4e2a\u840c\u840c\u54d2\u0020\u004c\u0069\u0076\u0065\u0032\u0044\u0020\u0041\u0050\u0049\u0020\u006f\u0028\u002a\u2267\u25bd\u2266\u0029\u30c4\u0020\u5feb\u6765\u5411\u0077\u0065\u0062\u9875\u9762\u6dfb\u52a0\u53ef\u7231\u7684\u770b\u677f\u5a18\u5427\uff5e\u8fd8\u5728\u4e3a\u004c\u0069\u0076\u0065\u0032\u0044\u590d\u6742\u7684\u914d\u7f6e\u800c\u82e6\u607c\u5417\uff1f\u5feb\u6765\u8bd5\u8bd5\u8fd9\u6b3e\u840c\u840c\u54d2\u0020\u004c\u0069\u0076\u0065\u0032\u0044\u0020\u0041\u0050\u0049\u0020\u5427\uff01","breadcrumb":{"@id":"https://xiarimangguo.github.io/aLive2D#breadcrumb"},"inLanguage":"zh-CN","potentialAction":[{"@type":"ReadAction","target":["https://xiarimangguo.github.io/aLive2D/"]}]},{"@type":"BreadcrumbList","@id":"https://xiarimangguo.github.io/aLive2D#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"\u840c\u306e\u521d\u89c1","item":"https://xiarimangguo.github.io/aLive2D#萌の初见"},{"@type":"ListItem","position":2,"name":"\u840c\u306e\u81ea\u8ff0","item":"https://xiarimangguo.github.io/aLive2D#萌の自述"},{"@type":"ListItem","position":3,"name":"\u840c\u306e\u76f8\u8bc6","item":"https://xiarimangguo.github.io/aLive2D#萌の相识"},{"@type":"ListItem","position":4,"name":"\u840c\u306e\u611f\u8c22","item":"https://xiarimangguo.github.io/aLive2D#萌の感谢"}]},{"@type":"Article","@id":"https://xiarimangguo.github.io/aLive2D#article","isPartOf":{"@id":"https://xiarimangguo.github.io/aLive2D#webpage"},"author":{"@id":"https://github.com/xiarimangguo"},"headline":"\u0061\u004c\u0069\u0076\u0065\u0032\u0044\u0021\u0020\u4e00\u4e2a\u840c\u840c\u54d2\u0020\u004c\u0069\u0076\u0065\u0032\u0044\u0020\u0041\u0050\u0049\u0020\u006f\u0028\u002a\u2267\u25bd\u2266\u0029\u30c4","datePublished":"2021-07-31T23:48:40+00:00","dateModified":"2021-08-10T18:26:09+00:00","mainEntityOfPage":{"@id":"https://xiarimangguo.github.io/aLive2D#webpage"},"wordCount":13,"commentCount":1,"publisher":{"@id":"https://github.com/xiarimangguo"},"image":{"@id":"https://xiarimangguo.github.io/aLive2D#primaryimage"},"thumbnailUrl":"./files/background.jpg","keywords":["live2d","live2d-api","live2d-web","\u770b\u677f\u5a18","live2d\u770b\u677f\u5a18","\u840c\u840c\u54d2","aLive2D"],"articleSection":["\u6587\u6863"],"inLanguage":"zh-CN","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://xiarimangguo.github.io/aLive2D#respond"]}]},{"@type":["Person","Organization"],"@id":"https://github.com/xiarimangguo","name":"\u590f\u65e5\u8292\u679c","image":{"@type":"ImageObject","@id":"https://xiarimangguo.github.io/aLive2D#personlogo","inLanguage":"zh-CN","url":"https://gallery.davincievans.top/wp-content/uploads/2020/03/a43bfc8c52ef8134a7ecce3ae5e0262d_2_3_art.jpg","contentUrl":"https://gallery.davincievans.top/wp-content/uploads/2020/03/a43bfc8c52ef8134a7ecce3ae5e0262d_2_3_art.jpg","width":800,"height":800,"caption":"xiarimangguo"},"logo":{"@id":"https://xiarimangguo.github.io/aLive2D/#personlogo"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="stylesheet" id="wp-block-library-css" href="./files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="live2d-base-css" href="./files/live2d.css" type="text/css" media="all">
+<link rel="stylesheet" id="Katex-css" href="./files/katex.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="Emojify.js-css" href="./files/emojify.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="saukra_css-css" href="./files/style.css" type="text/css" media="all">
+<link rel="alternate" type="application/json+oembed" href="https://xiarimangguo.github.io/aLive2D/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021">
+<link rel="alternate" type="text/xml+oembed" href="https://xiarimangguo.github.io/aLive2D/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;format=xml">
+<!-- live2d settings -->
+<script src="https://91.90.194.171/api/Live2D"></script>
+<script>aLive2D('Group(defined,#02)','240px','400px','Rb','10%','0%',true)</script>
+<style type="text/css">
+.site-top .lower nav {display: block !important;}
+.author-profile i , .post-like a , .post-share .show-share , .sub-text , .we-info a , span.sitename , .post-more i:hover , #pagination a:hover , .post-content a:hover , .float-content i:hover{ color: #e67474 }
+.feature i , /*.feature-title span ,*/ .download , .navigator i:hover , .links ul li:before , .ar-time i , span.ar-circle , .object , .comment .comment-reply-link , .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after { background: #e67474 }
+::-webkit-scrollbar-thumb { background: #e67474 }
+.download , .navigator i:hover , .link-title , .links ul li:hover , #pagination a:hover , .comment-respond input[type='submit']:hover { border-color: #e67474 }
+.entry-content a:hover , .site-info a:hover , .comment h4 a , #comments-navi a.prev , #comments-navi a.next , .comment h4 a:hover , .site-top ul li a:hover , .entry-title a:hover , #archives-temp h3 , span.page-numbers.current , .sorry li a:hover , .site-title a:hover , i.iconfont.js-toggle-search.iconsearch:hover , .comment-respond input[type='submit']:hover, blockquote:before, blockquote:after { color: #e67474 }
+
+#aplayer-float .aplayer-lrc-current { color: #e67474 !important}
+
+.is-active-link::before, .commentbody:not(:placeholder-shown)~.input-label, .commentbody:focus~.input-label {
+    background-color: #e67474 !important
+}
+
+.commentbody:focus {
+    border-color: #e67474 !important
+}
+
+.insert-image-tips:hover, .insert-image-tips-hover{ 
+    color: #e67474;
+    border: 1px solid #e67474}
+
+.site-top ul li a:after {
+    background-color: #e67474}
+
+.scrollbar,.butterBar-message {
+    background: #e67474 !important
+}
+
+#nprogress .spinner-icon{ 
+    border-top-color: #e67474; 
+    border-left-color: #e67474}
+
+#nprogress .bar {
+    background: #e67474}
+
+.changeSkin-gear,.toc{
+    background:rgba(255,255,255,0.8);
+}
+
+.entry-content th {
+    background-color: #e67474}
+.search-form--modal .search-form__inner {
+    bottom: unset !important;
+    top: 10% !important;
+}
+
+.post-list-thumb{opacity: 0}
+.post-list-show {opacity: 1}
+
+.comments .comments-main {display:block !important;}
+.comments .comments-hidden {display:none !important;}
+.centerbg{background-image: url("https://davincievans.top/wp-json/sakura/v1/image/cover");background-position: center center;background-attachment: inherit;}
+.rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
+</style>
+<script>
+/*Initial Variables*/
+var mashiro_option = new Object();
+var mashiro_global = new Object();
+mashiro_option.NProgressON = true;
+mashiro_option.email_domain = "gmail.com";
+mashiro_option.email_name = "xiarimangguo";
+mashiro_option.cookie_version_control = "";
+mashiro_option.qzone_autocomplete = false;
+mashiro_option.site_name = "夏日芒果の小屋";
+mashiro_option.author_name = "夏日芒果";
+mashiro_option.template_url = "https://gallery.davincievans.top/wp-content/themes/Sakura";
+mashiro_option.site_url = "https://xiarimangguo.github.io/aLive2D";
+mashiro_option.qq_api_url = "https://davincievans.top/wp-json/sakura/v1/qqinfo/json"; 
+// mashiro_option.qq_avatar_api_url = "https://api.2heng.xin/qqinfo/";
+mashiro_option.live_search = true;
+
+mashiro_option.skin_bg0 = "none";
+mashiro_option.skin_bg1 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/sakura.png";
+mashiro_option.skin_bg2 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/plaid2dbf8.jpg";
+mashiro_option.skin_bg3 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/star02.png";
+mashiro_option.skin_bg4 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png";
+mashiro_option.skin_bg5 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/dot_orange.gif";
+mashiro_option.skin_bg6 = "https://api.mashiro.top/bing/";
+mashiro_option.skin_bg7 = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sites/api-index/images/me.png";
+
+mashiro_option.land_at_home = false;
+
+mashiro_option.baguetteBoxON = false;
+
+mashiro_option.clipboardCopyright = true;
+
+mashiro_option.entry_content_theme_src = "https://gallery.davincievans.top/wp-content/themes/Sakura/cdn/theme/sakura.css?3.3.7";
+mashiro_option.entry_content_theme = "sakura";
+
+mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.7/cdn/css/lib.min.css";
+mashiro_option.float_player_on = true;
+
+mashiro_option.cover_api = "https://davincievans.top/wp-json/sakura/v1/image/cover";
+
+mashiro_option.windowheight = /Mobile|Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? 'fixed' : 'auto';
+/*End of Initial Variables*/
+</script>
+<link rel="amphtml" href="https://xiarimangguo.github.io/aLive2D/amp"><script type="text/javascript">
+if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+  alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+}
+</script>
+<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+<body class="post-template-default single single-post postid-1 single-format-standard chinese-font serif">
+	<div class="scrollbar" id="bar" style="width: 0%; background: orange;"></div>
+	<section id="main-container">
+				<div class="headertop filter-grid" style="height: 0px; display: none;">
+			<style>
+#banner_wave_1 {
+    width: auto;
+    height: 65px;
+    background: url(https://cdn.jsdelivr.net/gh/DavinciEvans/Imgs-bed@master/gallery/wave1.png) repeat-x;
+    _filter: alpha(opacity=80);
+    position: absolute;
+    bottom: 0;
+    width: 400%;
+    left: -236px;
+    z-index: 3;
+    opacity: 1;
+    transiton-property: opacity,bottom;
+    transition-duration: .4s,.4s;
+    animation-name: move2;
+    animation-duration: 240s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#banner_wave_2 {
+    width: auto;
+    height: 80px;
+    background: url(https://cdn.jsdelivr.net/gh/DavinciEvans/Imgs-bed@master/gallery/wave2.png) repeat-x;
+    _filter: alpha(opacity=80);
+    position: absolute;
+    bottom: 0;
+    width: 400%;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    transiton-property: opacity,bottom;
+    transition-duration: .4s,.4s;
+    animation-name: move2;
+    animation-duration: 160s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+ 
+@keyframes move1 {
+  100%{
+    background-position: 100% 0;
+  }
+}
+ 
+@keyframes move2 {
+  100%{
+    background-position: -100% 0;
+  }
+}
+</style>
+<div id="banner_wave_1"></div><div id="banner_wave_2"></div>   
+<figure id="centerbg" class="centerbg">
+	<div class="focusinfo">
+                <h1 class="center-text glitch is-glitching Ubuntu-font" data-text="Hi, Davinci!">Hi, Davinci!</h1>
+   				<div class="header-info">
+            <p><i class="fa fa-quote-left" aria-hidden="true"></i> You Are All Stardust.  <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                        <div class="top-social_v2">
+                <li id="bg-pre"><img class="flipx" src="./files/next-b.svg"></li>
+                                <li><a href="https://github.com/xiarimangguo" target="_blank" class="social-github" title="github"><img src="./files/github.png"></a></li>
+                	
+                                                <li><a href="#" target="_blank" class="social-lofter" title="telegram"><img src="./files/telegram.svg"></a></li>
+                	
+                                <li class="qq"><a href="#" title="Initiate chat ?"><img src="./files/qq.png"></a></li>
+                	
+                                                <li class="wechat"><a href="https://xiarimangguo.github.io/aLive2D/#"><img src="./files/wechat.png"></a>
+                    <div class="wechatInner">
+                        <img src="./files/qrcode_for_gh_872a1675d593_258.jpg" alt="WeChat">
+                    </div>
+                </li>
+                 
+                	
+                                <li><a href="https://space.bilibili.com/12129519" target="_blank" class="social-bili" title="bilibili"><img src="./files/bilibili.png"></a></li>
+                                                                <li><a href="https://music.163.com/#/my/m/music/playlist?id=533143838" target="_blank" class="social-wangyiyun" title="CloudMusic"><img src="./files/wangyiyun.png"></a></li>
+                                	
+                	
+                                	
+                		
+                                <li><a onclick="mail_me()" class="social-wangyiyun" title="E-mail"><img src="./files/email.svg"></a></li>
+                	
+                <li id="bg-next"><img src="./files/next-b.svg"></li>	
+            </div>
+                    </div>
+        	</div>
+	</figure>
+<div id="video-container" style="display:none;"><video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div><div id="video-add"></div><div class="video-stu"></div></div>		</div>	
+				<div id="page" class="site wrapper">
+			<header class="site-header no-select" role="banner">
+				<div class="site-top">
+					<div class="site-branding">
+												<span class="site-title">
+							<span class="logolink serif">
+								<a href="https://xiarimangguo.github.io/aLive2D/">
+									<span class="site-name">夏日芒果の小屋</span>
+								</a>
+							</span>
+						</span>	
+						<!-- logo end -->
+					</div><!-- .site-branding -->
+					  <div class="header-user-avatar">
+    <a href="https://xiarimangguo.github.io/aLive2D#">
+      <img class="faa-shake animated-hover" src="./files/none.png" width="30" height="30">
+    </a>
+    <div class="header-user-menu">
+      <div class="herder-user-name no-logged">Whether to <a href="https://xiarimangguo.github.io/aLive2D#" target="_blank" style="color:#333;font-weight:bold;text-decoration:none">log in</a> now?
+      </div>
+    </div>
+  </div>
+  					<div class="searchbox"><i class="iconfont js-toggle-search iconsearch icon-search"></i></div>
+										<div class="lower">						<nav><ul id="menu-menu-2" class="menu"><li><a href="https://xiarimangguo.github.io/aLive2D/"><span class="faa-parent animated-hover"><i class="fa fa-rocket faa-wrench"></i> 首页</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-code faa-horizontal"></i>  极客</span></a></li>
+<li><a><span class="faa-parent animated-hover"><i class="fa fa-leaf faa-tada"></i>  生活</span></a>
+<ul class="sub-menu">
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-music"></i> 音乐</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-anchor"></i> 二次元</a></li>
+	<li class="current-post-ancestor current-menu-parent"><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-smile-o"></i>  有感</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-cutlery"></i> 日常</a></li>
+</ul>
+</li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-quote-right faa-tada"></i>  BB</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-pencil faa-shake"></i> 留言板</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-link faa-shake" aria-hidden="true"></i> 邻居</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-star faa-burst"></i> 关于</span></a>
+<ul class="sub-menu">
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-child"></i> 我？</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-thumbs-up"></i> 投喂</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-feed"></i> RSS</a></li>
+</ul>
+</li>
+</ul></nav><!-- #site-navigation -->
+					</div>	
+				</div>
+			</header><!-- #masthead -->
+			  <div class="pattern-center-blank"></div>
+  <div class="pattern-center single-center">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(&quot;./files/background.jpg&quot;);" data-src="./files/background.jpg"> </div>
+    <header class="pattern-header single-header"><h1 class="entry-title">aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ</h1><p class="entry-census"><span><a href="https://github.com/xiarimangguo"><img src="./files/avatar.jpg"></a></span><span><a href="https://github.com/xiarimangguo">夏日芒果</a></span><span class="bull">·</span>2021-08-10<span class="bull">·</span><script src="https://91.90.194.171/analyze/counter.asp?Datatype=js&Page=https://xiarimangguo.github.io/aLive2D/"></script>次阅读</p></header>
+  </div>
+  		    <div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		
+<article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-feelings tag-155 tag-227 tag-185 tag-186">
+		<!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+	<div class="entry-content">
+		
+<h1 id="-api-">★•进阶·搭建API•★</h1>
+<blockquote>
+<p>已经迫不及待了吧，让我们开始吧！</p>
+</blockquote>
+<p>本API目前为纯静态编写，你可以很轻松地自建API，也可以将其部署在CDN上，无论是云服务器还是虚拟主机都可以轻松搭建...  </p>
+<h4 id="-">目录 <em>(੭</em>ˊᵕˋ)੭*ଘ</h4>
+<ul>
+<li><a href="#开箱啦">壹·开箱啦</a><ul>
+<li><a href="#坑无处不在">¿?～坑～无处不在！</a><ul>
+<li><a href="#跨域这位老朋友又来了">跨域这位“老朋友”又来了！！！</a></li>
+<li><a href="#为什么模型文件404了明明在这里的">为什么模型文件404了？明明在这里的！</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#进阶配置">贰·进阶配置</a><ul>
+<li><a href="#listjs">List.js</a><ul>
+<li><a href="#数组characters存放url">数组characters～存放url</a></li>
+<li><a href="#tellMoe函数对应关系">tellMoe函数～对应关系</a></li>
+<li><a href="#moeNum函数定义分组">moeNum函数～定义分组</a></li>
+</ul>
+</li>
+<li><a href="#lappdefinejs">LAppDefine.js</a></li>
+</ul>
+</li>
+<li><strong><a href="#添加萌萌哒live2d模型">★•叁·添加萌萌哒Live2D模型•★</a></strong></li>
+</ul>
+<h2 id="-">开箱啦</h2>
+<ul>
+<li>将本项目的源码下载下来，上传到你的服务器根目录，并在html文件中引入以下代码，就可以使用啦！</li>
+</ul>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://Your_HostName/api/Live2D/live2d.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="undefined">aLive2D(Model,Width,Height,Position,X,Y,EnableMsg)</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre><p><img src="https://91.90.194.171:8443/api/Live2D/start/start.gif" alt="让我们开始吧！"></p>
+<ul>
+<li>打开<code>live2d.js</code>将<strong>其中的<code>host</code>变量</strong>更改为你的主机名(如有端口号，那么端口号也要带)
+<img src="https://91.90.194.171:8443/api/Live2D/start/8.gif" alt="更改主机名"></li>
+<li>请把上面的代码中的<code>Your_HostName</code>更换为你的主机名(域名或IP地址)，并配置aLive2D函数
+<img src="https://91.90.194.171:8443/api/Live2D/start/9.gif" alt="配置aLive2D函数"></li>
+</ul>
+<h4 id="-">¿?～坑～无处不在！</h4>
+<ul>
+<li><h5 id="-">跨域这位“老朋友”又来了！！！</h5>
+<p>为了防止跨域问题，请为服务器添加以下<strong>HTTP响应标头</strong><br>[设置不了的也不是不能用，只是只能在<strong>你自己</strong>的网站上使用，无法对外提供服务]<br>，并为服务器<strong>启用<code>https</code>访问</strong><br>[尽量吧，实在启用不了就算了，只是你的api只能<strong>被<code>http</code>页面调用</strong>]</p>
+<pre><code><span class="hljs-keyword">Access</span>-Control-Allow-Headers: Content-<span class="hljs-keyword">Type</span>, api_key, Authorization
+<span class="hljs-keyword">Access</span>-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+<span class="hljs-keyword">Access</span>-Control-Allow-Origin: *
+</code></pre><p><img src="https://91.90.194.171:8443/api/Live2D/start/10.gif" alt="跨域设置"></p>
+</li>
+<li><h5 id="-404-">为什么模型文件404了？明明在这里的！</h5>
+<p>请在服务器中为<code>moc</code>和<code>mtn</code>文件设置正确的<code>Mime-type</code> <code>(Mime类型)</code>，避免莫名其妙的<code>404</code>问题<br>[没有IIS的管理权？尝试通过根目录的<code>web.config</code>配置(没有就新建一个)，这是一个xml文件，包含当前目录下的IIS配置信息(请Google “web.config添加Mime类型”)]  </p>
+</li>
+</ul>
+<p><strong><code>Mime-type</code>设置如下</strong></p>
+<pre><code>moc: <span class="hljs-built_in">application</span>/octet-stream
+mtn: <span class="hljs-built_in">application</span>/octet-stream
+</code></pre><p><img src="https://91.90.194.171:8443/api/Live2D/start/11.gif" alt="Mime-type设置"></p>
+<h2 id="-">进阶配置</h2>
+<p>在开始配置前，让我们认识两个文件吧！</p>
+<h4 id="list-js">List.js</h4>
+<ul>
+<li>List.js用来定义模型列表及分组，指定模型名称与配置文件的对应关系</li>
+</ul>
+<p>List.js的文件结构如下所示</p>
+<pre><code><span class="hljs-keyword">var</span> characters = [
+    ...
+    host+<span class="hljs-string">"/api/Live2D/shiwuyu/100005_lonjingxiaren/LAppDefine.js"</span>,
+    host+<span class="hljs-string">"/api/Live2D/shiwuyu/100034_baozaifan/LAppDefine.js"</span>,
+    host+<span class="hljs-string">"/api/Live2D/shiwuyu/100025_guobaorou/LAppDefine.js"</span>,
+    ...
+];
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tellMoe</span><span class="hljs-params">(Moc)</span> </span>{
+    <span class="hljs-keyword">switch</span> (Moc) {
+        ...
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"Lonjingxiaren"</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"#02001"</span>:
+            <span class="hljs-keyword">return</span> characters[<span class="hljs-number">10</span>];
+             <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"Baozaifan"</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"#02002"</span>:
+            <span class="hljs-keyword">return</span> characters[<span class="hljs-number">11</span>];
+             <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"Guobaorou"</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"#02003"</span>:
+            <span class="hljs-keyword">return</span> characters[<span class="hljs-number">12</span>];
+             <span class="hljs-keyword">break</span>;
+        ...
+    }
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">moeNum</span><span class="hljs-params">(Grp)</span> </span>{
+    <span class="hljs-keyword">var</span> moe_num = [];
+    <span class="hljs-keyword">switch</span> (Grp) {
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"Default"</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"#01"</span>:
+            moe_num[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+            moe_num[<span class="hljs-number">1</span>] = <span class="hljs-number">9</span>;
+            <span class="hljs-keyword">return</span> moe_num;
+             <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"Shiwuyu"</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"#02"</span>:
+            moe_num[<span class="hljs-number">0</span>] = <span class="hljs-number">10</span>;
+            moe_num[<span class="hljs-number">1</span>] = <span class="hljs-number">60</span>;
+            <span class="hljs-keyword">return</span> moe_num;
+             <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">default</span>:
+            moe_num[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+            moe_num[<span class="hljs-number">1</span>] = <span class="hljs-number">9</span>;
+            <span class="hljs-keyword">return</span> moe_num;
+             <span class="hljs-keyword">break</span>;
+        };
+};
+</code></pre><h5 id="-characters-url">数组characters～存放url</h5>
+<ul>
+<li>characters用于存放模型的<code>LAppDefine.js</code>配置文件url  </li>
+</ul>
+<h5 id="tellmoe-">tellMoe函数～对应关系</h5>
+<ul>
+<li>这里的每一个<code>case</code>块都存放着模型与配置文件的对应关系</li>
+</ul>
+<pre><code><span class="hljs-keyword">case</span> <span class="hljs-string">"Lonjingxiaren"</span>:
+<span class="hljs-keyword">case</span> <span class="hljs-string">"#02001"</span>:
+    <span class="hljs-keyword">return</span> characters[<span class="hljs-number">10</span>];
+     <span class="hljs-keyword">break</span>;
+</code></pre><ul>
+<li><code>Lonjingxiaren</code>是<strong>模型名称</strong>，<code>#02001</code>是<strong>模型编号</strong>  </li>
+<li><code>characters[10]</code>是该模型对应的<strong>配置文件</strong>  </li>
+<li>在每个<code>case</code>块中，<strong><code>characters[x]</code></strong>中的<strong><code>x</code></strong>应比上一个<code>case</code>块<strong>增加1</strong>，以便与<code>characters</code>数组中的url一一对应</li>
+</ul>
+<h5 id="moenum-">moeNum函数～定义分组</h5>
+<ul>
+<li>这里的每一个<code>case</code>块都存放着模型的分组信息</li>
+</ul>
+<pre><code><span class="hljs-keyword">case</span> <span class="hljs-string">"Shiwuyu"</span>:
+<span class="hljs-keyword">case</span> <span class="hljs-string">"#02"</span>:
+    moe_num[<span class="hljs-number">0</span>] = <span class="hljs-number">10</span>;
+    moe_num[<span class="hljs-number">1</span>] = <span class="hljs-number">60</span>;
+    <span class="hljs-keyword">return</span> moe_num;
+     <span class="hljs-keyword">break</span>;
+</code></pre><ul>
+<li><code>Shiwuyu</code>是<strong>分组名称</strong>，<code>#02</code>是<strong>分组编号</strong>  </li>
+<li><code>moe_num[0]</code>用于设置分组的<strong>起始位置</strong>(填写<code>characters</code>数组下标)</li>
+<li><code>moe_num[1]</code>用于设置分组的<strong>结束位置</strong>(填写<code>characters</code>数组下标)</li>
+<li>将要分成一组的模型的<code>case</code>在<code>tellMoe</code>函数中<strong>放在一起</strong>，然后在这里配置，你就定义好一个新的分组啦</li>
+</ul>
+<h4 id="lappdefine-js">LAppDefine.js</h4>
+<ul>
+<li>这个文件用来配置模型参数</li>
+<li>文件详细配置参见<a href="https://github.com/fguby/live2D">fguby/live2D: 来定制一个自己专属的live2D看板娘吧(๑•̀ㅂ•́)و✧</a></li>
+<li>这个清晰度配置是我新增的，注释里标明了使用方法呐</li>
+</ul>
+<p>文件结构如下所示</p>
+<pre><code>            var LAppDefine = {   
+                <span class="hljs-comment">// 调试，true时会在console里显示日志</span>
+                <span class="hljs-string">DEBUG_LOG :</span> <span class="hljs-literal">true</span>,
+                <span class="hljs-string">DEBUG_MOUSE_LOG :</span> <span class="hljs-literal">false</span>, <span class="hljs-comment">// 鼠标相关日志   </span>
+                <span class="hljs-comment">//  全部设定    </span>
+                <span class="hljs-comment">//这里配置canvsa元素的id</span>
+                <span class="hljs-string">CANVAS_ID :</span> <span class="hljs-string">"aLive2D"</span>,
+                <span class="hljs-comment">//是否开启滚轮缩放，默认true</span>
+                <span class="hljs-string">IS_SCROLL_SCALE :</span> <span class="hljs-literal">true</span>,
+                <span class="hljs-comment">// 画面最大缩放级别</span>
+                <span class="hljs-string">VIEW_MAX_SCALE :</span> <span class="hljs-number">2</span>,
+                <span class="hljs-comment">// 画面最小缩放级别</span>
+                <span class="hljs-string">VIEW_MIN_SCALE :</span> <span class="hljs-number">0.8</span>,
+
+                <span class="hljs-string">VIEW_LOGICAL_LEFT :</span> <span class="hljs-number">-1</span>,
+                <span class="hljs-string">VIEW_LOGICAL_RIGHT :</span> <span class="hljs-number">1</span>,
+
+                <span class="hljs-string">VIEW_LOGICAL_MAX_LEFT :</span> <span class="hljs-number">-2</span>,
+                <span class="hljs-string">VIEW_LOGICAL_MAX_RIGHT :</span> <span class="hljs-number">2</span>,
+                <span class="hljs-string">VIEW_LOGICAL_MAX_BOTTOM :</span> <span class="hljs-number">-2</span>,
+                <span class="hljs-string">VIEW_LOGICAL_MAX_TOP :</span> <span class="hljs-number">2</span>,
+
+                <span class="hljs-comment">// 动作优先级常量</span>
+                <span class="hljs-string">PRIORITY_NONE :</span> <span class="hljs-number">0</span>,
+                <span class="hljs-string">PRIORITY_IDLE :</span> <span class="hljs-number">1</span>,
+                <span class="hljs-string">PRIORITY_NORMAL :</span> <span class="hljs-number">2</span>,
+                <span class="hljs-string">PRIORITY_FORCE :</span> <span class="hljs-number">3</span>,
+
+                <span class="hljs-comment">//是否绑定切换模型按钮</span>
+                <span class="hljs-string">IS_BIND_BUTTON :</span> <span class="hljs-literal">false</span>,
+                <span class="hljs-comment">//绑定按钮元素id</span>
+                <span class="hljs-string">BUTTON_ID :</span> <span class="hljs-string">"Change"</span>,
+                <span class="hljs-comment">//是否开启模型切换完成之前禁止按钮点击的选项，默认为true</span>
+                <span class="hljs-string">IS_BAN_BUTTON :</span> <span class="hljs-literal">true</span>,
+                <span class="hljs-comment">//设置按钮禁止状态时的class，可自定义样式，前提是IS_BAN_BUTTON为true</span>
+                <span class="hljs-string">BAN_BUTTON_CLASS :</span> <span class="hljs-string">"inactive"</span>,
+                <span class="hljs-comment">//设置按钮正常状态时的class</span>
+                <span class="hljs-string">NORMAL_BUTTON_CLASS :</span> <span class="hljs-string">"active"</span>,
+                <span class="hljs-comment">//衣服切换模式 目前只支持两种 sequence-顺序 random-随机</span>
+                <span class="hljs-comment">//需事先配置好json文件里的textures属性</span>
+                <span class="hljs-comment">//暂不支持保存功能</span>
+                <span class="hljs-string">TEXURE_CHANGE_MODE :</span> <span class="hljs-string">"sequence"</span>,
+                <span class="hljs-string">IS_START_TEXURE_CHANGE :</span> <span class="hljs-literal">false</span>,
+                <span class="hljs-string">TEXURE_BUTTON_ID :</span> <span class="hljs-string">""</span>,
+                <span class="hljs-comment">/**
+                 *  模型定义
+                    自定义配置模型，同一数组内放置两个模型则为开启双模型
+                    三模型也只取数组里的前两个
+                    模型出现的顺序与数组一致
+                    这里请用相对路径配置
+                */</span>
+<span class="hljs-symbol">                MODELS:</span>
+                [
+                    [host+<span class="hljs-string">"/model/100001_hugeng/model.json"</span>]
+                ],
+
+                <span class="hljs-comment">// 与外部定义的json文件匹配</span>
+                <span class="hljs-string">MOTION_GROUP_IDLE :</span> <span class="hljs-string">"idle"</span>, <span class="hljs-comment">// 空闲时</span>
+                <span class="hljs-string">MOTION_GROUP_TAP_BODY :</span> <span class="hljs-string">"tap_body"</span>, <span class="hljs-comment">// 点击身体时</span>
+                <span class="hljs-string">MOTION_GROUP_FLICK_HEAD :</span> <span class="hljs-string">"flick_head"</span>, <span class="hljs-comment">// 抚摸头部</span>
+                <span class="hljs-string">MOTION_GROUP_PINCH_IN :</span> <span class="hljs-string">"pinch_in"</span>, <span class="hljs-comment">// 放大时</span>
+                <span class="hljs-string">MOTION_GROUP_PINCH_OUT :</span> <span class="hljs-string">"pinch_out"</span>, <span class="hljs-comment">// 缩小时</span>
+                <span class="hljs-string">MOTION_GROUP_SHAKE :</span> <span class="hljs-string">"shake"</span>, <span class="hljs-comment">// 摇晃</span>
+                <span class="hljs-comment">//如果有自定义的动作分组可以放在这里</span>
+
+                <span class="hljs-comment">// 与外部定义json文件相匹配</span>
+                <span class="hljs-string">HIT_AREA_HEAD :</span> <span class="hljs-string">"head"</span>,
+                <span class="hljs-string">HIT_AREA_BODY :</span> <span class="hljs-string">"body"</span>,
+
+                <span class="hljs-comment">//初始化的模型大小</span>
+                <span class="hljs-string">SCALE :</span> <span class="hljs-number">1.2</span>,
+
+                <span class="hljs-comment">//新增属性，是否播放音频 默认为true</span>
+                <span class="hljs-string">IS_PLAY_AUDIO :</span> <span class="hljs-literal">true</span>,
+                <span class="hljs-comment">//新增属性，audio标签id值   </span>
+                <span class="hljs-string">AUDIO_ID :</span> <span class="hljs-string">"aAudio"</span>,
+
+                <span class="hljs-comment">/**
+                 * 清晰度设置
+                    此配置为新增配置，如设置后没有效果或图像变形，
+                    请检查&lt;canvas&gt;标签是否位于&lt;div&gt;或其他父标签内，
+                    并将&lt;canvas&gt;独立放于一个父标签内，
+                    并取消其父标签的width和height属性
+                */</span>
+
+                <span class="hljs-comment">//是否启用清晰度设置 默认为false</span>
+                <span class="hljs-string">IS_ENABLE_CLARITY :</span> <span class="hljs-literal">true</span>,
+                <span class="hljs-comment">//设置清晰度 支持 1倍 2倍 4倍 8倍 16倍 </span>
+                <span class="hljs-string">CLARITY :</span> <span class="hljs-number">2</span>,
+                <span class="hljs-comment">//是否启用自动适配 可优化移动设备的显示效果</span>
+                <span class="hljs-string">IS_AUTO_ADJUST_CLARITY :</span> <span class="hljs-literal">true</span>
+
+            };
+</code></pre><blockquote>
+<p>xiarimangguo: 看看其它的Live2D在移动端的显示效果(惨·不·忍·睹)，你就会明白有些站长一定不要移动端显示Live2D的原因了......</p>
+</blockquote>
+<p>快来体验一下清晰度设置吧，让你的Live2D们更加生动！</p>
+<p><del>蓝屏钙，好喝的钙</del></p>
+<p>不要尝试16倍的清晰度......不要尝试16倍的清晰度......不要尝试16倍的清晰度......</p>
+<p>(°ー°〃)(°ー°〃)<br>[Chrome已停止响应][请稍候，Microsoft诊断程序正在检测问题......]</p>
+<p>(°ー°〃)(°ー°〃)(°ー°〃)(°ー°〃)(°ー°〃)<br>[Windows已停止响应...]</p>
+<h2 id="-live2d-">添加萌萌哒Live2D模型</h2>
+<h4 id="-">如果你想要添加自己的模型，那么就按以下步骤操作吧</h4>
+<ol>
+<li>将存放模型的文件夹复制到<code>model</code>文件夹中
+<img src="https://91.90.194.171:8443/api/Live2D/start/1.gif" alt="第1步"></li>
+<li>如果没有<code>model.json</code>，要配置一下<code>model.json</code>，<strong>在<code>expressions</code>一节中设置模型表情</strong>，需与<code>expression</code>文件夹一致，或者<strong>找到<code>*.exp.json</code>文件所在的文件夹</strong>一般就是存放模型<strong>表情</strong>的文件夹，<strong>在<code>motions</code>一节中设置模型动作文件</strong>，需与<code>action</code>或<code>motion</code>文件夹一致，或者<strong>找到<code>*.mtn</code>文件所在的文件夹</strong>一般就是存放模型<strong>动作</strong>的文件夹[此步骤仅作参考哦，一般来说模型文件夹中会附带<code>model.json</code>的]
+<img src="https://91.90.194.171:8443/api/Live2D/start/2.gif" alt="第2步">
+<strong>这样配置<code>model.json</code></strong>
+<img src="https://91.90.194.171:8443/api/Live2D/start/3.gif" alt="第3步"></li>
+<li>在api/Live2D文件夹下新建一个文件夹，命名为模型所在分组名，进入该文件夹，新建一个文件夹，命名为模型的名称<br>[如分组文件夹已存在，只须新建一个文件夹，命名为模型的名称即可]
+<img src="https://91.90.194.171:8443/api/Live2D/start/4.gif" alt="第4步"></li>
+<li>将<code>LAppDefine.js</code>复制到该文件夹，更改<code>models</code>参数，指向模型配置文件<code>model.json</code>的url
+<img src="https://91.90.194.171:8443/api/Live2D/start/5.gif" alt="第5步"></li>
+<li>在list.js中的<code>characters</code>数组中添加<code>LAppDefine.js</code>的url</li>
+<li>在<code>tellMoe</code>函数中新增一个<code>case</code>，并定义模型名称及编号，以及对应的配置文件</li>
+<li>在<code>moeNum</code>函数中更新对应分组的分组范围
+<img src="https://91.90.194.171:8443/api/Live2D/start/6.gif" alt="第6步"></li>
+<li>更改<code>aLive2D</code>函数的<code>Model</code>参数，模型就会出现在网页上啦！
+<img src="https://91.90.194.171:8443/api/Live2D/start/7.gif" alt="第7步">
+如果还是不会操作，请参考已配置好的模型呐，结合上面的步骤，很快就可以理解的！</li>
+</ol>
+<p>本API附带的60+开箱即用的模型都是很不错的，你也可以从中挑选喜欢的模型使用呀～</p>
+<blockquote>
+<p>o(*≧▽≦)ツ喵~~~</p>
+</blockquote>
+
+	</div><!-- .entry-content -->
+	  <div class="single-reward">
+    <div class="reward-open">赏
+      <div class="reward-main">
+        <ul class="reward-row">
+          <!--<li class="alipay-code"><img src="./files/支付宝.jpeg"></li>--><li class="wechat-code"><img src="./files/微信.jpeg"></li>        </ul>
+      </div>
+    </div>
+  </div>
+  	<footer class="post-footer">
+	<div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+	<div class="post-tags">
+		<i class="iconfont icon-tags"></i> <a href="https://xiarimangguo.github.io/aLive2D#" rel="tag">live2d</a> <a href="https://xiarimangguo.github.io/aLive2D#" rel="tag">live2d-api</a> <a href="https://xiarimangguo.github.io/aLive2D#" rel="tag">live2d-web</a> <a href="https://xiarimangguo.github.io/aLive2D#" rel="tag">看板娘</a> 	</div>
+    
+<div class="post-like">
+<a href="javascript:;" data-action="ding" data-id="1" class="specsZan ">
+	<i class="iconfont icon-like"></i> <span class="count">
+		0</span>
+	</a>
+</div>
+		
+<div class="post-share">
+	<div class="social-share sharehidden share-component"><a class="social-share-icon icon-weibo" href="http://service.weibo.com/share/share.php?url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;title=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;pic=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmoezx%2Fcdn%403.1.9%2Fimg%2FSakura%2Fimages%2Fnext-b.svg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;title=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;source=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;desc=2020%20%E5%B9%B4%E6%98%AF%E5%BE%88%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%80%E5%B9%B4%EF%BC%8C%E7%96%AB%E6%83%85%E6%94%B9%E5%8F%98%E4%BA%86%E6%88%91%E4%BB%AC%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9A%E8%87%B3%E6%98%AF%E6%95%B4%E4%B8%AA%E4%B8%96%E7%95%8C%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BD%A8%E8%BF%B9%E3%80%82%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%AD%A6%E6%A0%A1%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E4%BA%86%E7%BD%91%E4%B8%8A%E6%8E%88%E8%AF%BE%EF%BC%8C%E5%92%B1%E4%B9%9F%E6%9C%89%E5%B9%B8%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E6%AC%A1%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%20orz%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%89%8D%E6%97%A0%E5%8F%A4%E4%BA%BA%E5%90%8E%E6%97%A0%E6%9D%A5%E8%80%85%E4%BA%86%E5%8F%AD%20%E2%99%AA(%C2%B4%E2%96%BD%EF%BD%80)%E3%80%82%E8%99%BD%E7%84%B6%E5%BE%88%E6%A3%92%EF%BC%8C%E4%BD%86%E8%A2%AB%E7%9F%A5%E8%AF%86%E5%A1%AB%E6%BB%A1%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E6%9B%B4%E5%8A%A0%E5%BF%AB%E4%B9%90%E5%91%A2%E3%80%82%E8%BF%99%E4%B9%9F%E6%98%AF%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%BD%93%E9%AA%8C%E5%90%A7&amp;pics=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmoezx%2Fcdn%403.1.9%2Fimg%2FSakura%2Fimages%2Fnext-b.svg&amp;summary=%222020%20%E5%B9%B4%E6%98%AF%E5%BE%88%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%80%E5%B9%B4%EF%BC%8C%E7%96%AB%E6%83%85%E6%94%B9%E5%8F%98%E4%BA%86%E6%88%91%E4%BB%AC%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9A%E8%87%B3%E6%98%AF%E6%95%B4%E4%B8%AA%E4%B8%96%E7%95%8C%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BD%A8%E8%BF%B9%E3%80%82%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%AD%A6%E6%A0%A1%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E4%BA%86%E7%BD%91%E4%B8%8A%E6%8E%88%E8%AF%BE%EF%BC%8C%E5%92%B1%E4%B9%9F%E6%9C%89%E5%B9%B8%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E6%AC%A1%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%20orz%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%89%8D%E6%97%A0%E5%8F%A4%E4%BA%BA%E5%90%8E%E6%97%A0%E6%9D%A5%E8%80%85%E4%BA%86%E5%8F%AD%20%E2%99%AA(%C2%B4%E2%96%BD%EF%BD%80)%E3%80%82%E8%99%BD%E7%84%B6%E5%BE%88%E6%A3%92%EF%BC%8C%E4%BD%86%E8%A2%AB%E7%9F%A5%E8%AF%86%E5%A1%AB%E6%BB%A1%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E6%9B%B4%E5%8A%A0%E5%BF%AB%E4%B9%90%E5%91%A2%E3%80%82%E8%BF%99%E4%B9%9F%E6%98%AF%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%BD%93%E9%AA%8C%E5%90%A7%22" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="https://xiarimangguo.github.io/aLive2D/"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAABpRJREFUeF7tnW1z2kAMhMP//9Epx/SC7Uo8u/KRQKrO5EPH53vRaqWVbODy8fHxef07/e/zM57mcrnIc2dzzAnmXMpacwytr8wVHWB7H60hG+A6cFirAQksRkZ+OiDknRnKkddmh4nWoINv1115P61La0WAnLXhOOsXQ85OpngMHZKovfL+BmTExiDPkGGaIYM2kIirdI3mdUCiRE372q4fzVXZyy3M/LWXEiWmg2Vjw5DVgNx5qeTDBiRhcDMkoSsl5yh0ZNSP5qL7s7xDzKd907xvF7KOBd74P3l1A7I4qTteqSbaLUgU42l9p1KnsW/BEDJIFAaykERsobmi+8nIJLvfTmU1IHFmsmSvk9wcyaeGJCdpU6J1zkLdCtoX3Z/tZTvvj7ROKCTRwbODOTHcCV+rxEgD4tDjoPgoX1XUoQWIufd/hmfeSRt32hkUHn96rbM2vAmE4RgrJmpAVljxCsjVkEsAUWoDitsqA5QcozYKFUdaY2ptlgZk448kNjSTnhvVgLwrIJUC7+gr9DwkClmO2iHfrJyBWjPbSj2riZwzyAypHKYByV0kzYNqUm9A9salIpS00lJASMHQZqqKbN5XVUbkVFTHZPuOWkIUPtOmZoUhDcj+vYMGpKiM3pYhqhrKVAUpEzJMRncKhTQvxX0nzFDNQtfTvlYUshqQ2FxO7loKiKObyasccOl5CTGA9uLkPmetpcxdldRTCgav7JCnKb0qMj71zeb1FWs1IBU0rve8FUPOJuJUV28YQp5UsbMTWiIRUo71hddtlfN9tU4akJhBTih2VWeYq2cOaUBeDBCik0NtApdaEOSVzwh9SiPUqY8ieyk2LHV7ySANCLdW0pw7xMcR+ZVq5Gx1TMwlr1W8MpLAJJurYmLO24AksjcLnw1IlQrJfVT1UzfiZQEhajr5hMZWMKnuj1o6VMk7gDrt+fC9LCfuk5GdGN6AJC/KNSB313AcitQlsXmsWnrZWpn4kbe/EuCOwb9DADQgxV4bOaXjdDugZx1CzUEnVzi1wXasWv9QaLhRX2z+EUOUtSjBO4oPGTI31IDsze7YowH5DQxxJGcUH6sxsxKylL1GzK40/JyQRWMpPO5UlnLIqA9DB6/OWynMIhVUfVwcre84TzS2ARmKBd7hIiOR1ytS2Moh0QMqSliqqjiOO6t8VIGxQmXRWmrrRQFsN6YBuX8nJOVGMi45MjnkzZEakBcD5GxhWKF2lhwrYYBEg5MjyMO/hSENSMwQB+hIfVKezeYvVerkdZknqa2RijGO9zjeThJXNTgxiGTzLYdUGNKAkMvovbR/lGgDcjcJqSCHddW58JscaBOVROxsluavzqUWazT/gJNsRPlkJ7cnQzIS0mJkMNpMdJ36YnRdUXENyMZK5HVkcLr+6wBZpYZuqiF4IpeJAhUoGrcNI04vKlJJ1AtboSi3e8S3TiJJSGGMNtmA5E1P+eMIjsamfESAZIBTq78ays7WIZVuRbbXBqSY2yi8kQM3IAfaUp4k9fc0QKLCUEmac0OVg3Gd+3gEhbQsqTt7pbErw2NYhzgLZLJSjcUNSKw+b6q0GRL/aNmPMWQ+oHK8lqrzlSoq2pdTW9BeqIhUIgeVAaTCdvmoAbmbIzL+ywHiaH+1iDwrGjI2E3MdZVSJGIrYoHnxQ58NCJkw/g0qqkNSp6KQ1YB8MyBTZWXLUpu6En7oHjVJHvdM8Z7mdQQEw6SPCOuQBiS2ADmPbvZ8ZANiWPHbAaEcYuz9ayjVCXQ9S4gUcirPXpwwl9U0aqhTnq2gympA7l900YCM3o7xGcBfwRBSWSpDiPpjHgo5KvVJgDiFozMXtWEUG8z10iKyAYkhqTQXlwJS8d5xFKdwdJps00xOyCKGrTQy2csJnzsRMxlCC1AYkBRE8DPXFBIbELLQ4XozhAtK6nYgQ6gYctrUFFerc0UhzfElMhI5mrNWNDazS+mJYdWI1B4nI1AOcIzUgBxqikj+NSDFZ+rEEMdTiTXOXLtYLH7XCYmV7fW0djC+Tl2uQyjWZxurSFkyXFXx0byKcR/lpl8HyNmQFMX9zMNprJqPVsh559xPSeoUBpRDPioMSQWOexsQ4RdcHU9pQASDRp5POYS82cldjp4nWfsI8KqQoPuU50D4KVx1ESfhkUCgNZX7G5CEYc2Qu/tYDHG8kkJHJj9VZaMwQN2vw1zaXzW8ksDY2WsIEvVwj8YpB6cDE9DENrqf6hTaXwOyka/DmP8DIH8Al6gLAQhz74sAAAAASUVORK5CYII=" style="display: block;"></div><div class="help"><p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p></div></div></a><a class="social-share-icon icon-tencent" href="http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;title=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;pic=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmoezx%2Fcdn%403.1.9%2Fimg%2FSakura%2Fimages%2Fnext-b.svg" target="_blank"></a><a class="social-share-icon icon-douban" href="http://shuo.douban.com/!service/share?href=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;name=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;text=2020%20%E5%B9%B4%E6%98%AF%E5%BE%88%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%80%E5%B9%B4%EF%BC%8C%E7%96%AB%E6%83%85%E6%94%B9%E5%8F%98%E4%BA%86%E6%88%91%E4%BB%AC%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9A%E8%87%B3%E6%98%AF%E6%95%B4%E4%B8%AA%E4%B8%96%E7%95%8C%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BD%A8%E8%BF%B9%E3%80%82%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%AD%A6%E6%A0%A1%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E4%BA%86%E7%BD%91%E4%B8%8A%E6%8E%88%E8%AF%BE%EF%BC%8C%E5%92%B1%E4%B9%9F%E6%9C%89%E5%B9%B8%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E6%AC%A1%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%20orz%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%89%8D%E6%97%A0%E5%8F%A4%E4%BA%BA%E5%90%8E%E6%97%A0%E6%9D%A5%E8%80%85%E4%BA%86%E5%8F%AD%20%E2%99%AA(%C2%B4%E2%96%BD%EF%BD%80)%E3%80%82%E8%99%BD%E7%84%B6%E5%BE%88%E6%A3%92%EF%BC%8C%E4%BD%86%E8%A2%AB%E7%9F%A5%E8%AF%86%E5%A1%AB%E6%BB%A1%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E6%9B%B4%E5%8A%A0%E5%BF%AB%E4%B9%90%E5%91%A2%E3%80%82%E8%BF%99%E4%B9%9F%E6%98%AF%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%BD%93%E9%AA%8C%E5%90%A7&amp;image=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmoezx%2Fcdn%403.1.9%2Fimg%2FSakura%2Fimages%2Fnext-b.svg&amp;starid=0&amp;aid=0&amp;style=11" target="_blank"></a><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;title=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;desc=2020%20%E5%B9%B4%E6%98%AF%E5%BE%88%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%80%E5%B9%B4%EF%BC%8C%E7%96%AB%E6%83%85%E6%94%B9%E5%8F%98%E4%BA%86%E6%88%91%E4%BB%AC%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9A%E8%87%B3%E6%98%AF%E6%95%B4%E4%B8%AA%E4%B8%96%E7%95%8C%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BD%A8%E8%BF%B9%E3%80%82%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%AD%A6%E6%A0%A1%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E4%BA%86%E7%BD%91%E4%B8%8A%E6%8E%88%E8%AF%BE%EF%BC%8C%E5%92%B1%E4%B9%9F%E6%9C%89%E5%B9%B8%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E6%AC%A1%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%20orz%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%89%8D%E6%97%A0%E5%8F%A4%E4%BA%BA%E5%90%8E%E6%97%A0%E6%9D%A5%E8%80%85%E4%BA%86%E5%8F%AD%20%E2%99%AA(%C2%B4%E2%96%BD%EF%BD%80)%E3%80%82%E8%99%BD%E7%84%B6%E5%BE%88%E6%A3%92%EF%BC%8C%E4%BD%86%E8%A2%AB%E7%9F%A5%E8%AF%86%E5%A1%AB%E6%BB%A1%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E6%9B%B4%E5%8A%A0%E5%BF%AB%E4%B9%90%E5%91%A2%E3%80%82%E8%BF%99%E4%B9%9F%E6%98%AF%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%BD%93%E9%AA%8C%E5%90%A7&amp;summary=2020%20%E5%B9%B4%E6%98%AF%E5%BE%88%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%80%E5%B9%B4%EF%BC%8C%E7%96%AB%E6%83%85%E6%94%B9%E5%8F%98%E4%BA%86%E6%88%91%E4%BB%AC%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9A%E8%87%B3%E6%98%AF%E6%95%B4%E4%B8%AA%E4%B8%96%E7%95%8C%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BD%A8%E8%BF%B9%E3%80%82%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%AD%A6%E6%A0%A1%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E4%BA%86%E7%BD%91%E4%B8%8A%E6%8E%88%E8%AF%BE%EF%BC%8C%E5%92%B1%E4%B9%9F%E6%9C%89%E5%B9%B8%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E6%AC%A1%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%20orz%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%89%8D%E6%97%A0%E5%8F%A4%E4%BA%BA%E5%90%8E%E6%97%A0%E6%9D%A5%E8%80%85%E4%BA%86%E5%8F%AD%20%E2%99%AA(%C2%B4%E2%96%BD%EF%BD%80)%E3%80%82%E8%99%BD%E7%84%B6%E5%BE%88%E6%A3%92%EF%BC%8C%E4%BD%86%E8%A2%AB%E7%9F%A5%E8%AF%86%E5%A1%AB%E6%BB%A1%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E6%9B%B4%E5%8A%A0%E5%BF%AB%E4%B9%90%E5%91%A2%E3%80%82%E8%BF%99%E4%B9%9F%E6%98%AF%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%BD%93%E9%AA%8C%E5%90%A7&amp;site=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86" target="_blank"></a><a class="social-share-icon icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;title=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;summary=2020%20%E5%B9%B4%E6%98%AF%E5%BE%88%E7%89%B9%E6%AE%8A%E7%9A%84%E4%B8%80%E5%B9%B4%EF%BC%8C%E7%96%AB%E6%83%85%E6%94%B9%E5%8F%98%E4%BA%86%E6%88%91%E4%BB%AC%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9A%E8%87%B3%E6%98%AF%E6%95%B4%E4%B8%AA%E4%B8%96%E7%95%8C%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BD%A8%E8%BF%B9%E3%80%82%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%AD%A6%E6%A0%A1%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E4%BA%86%E7%BD%91%E4%B8%8A%E6%8E%88%E8%AF%BE%EF%BC%8C%E5%92%B1%E4%B9%9F%E6%9C%89%E5%B9%B8%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E6%AC%A1%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%20orz%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E5%89%8D%E6%97%A0%E5%8F%A4%E4%BA%BA%E5%90%8E%E6%97%A0%E6%9D%A5%E8%80%85%E4%BA%86%E5%8F%AD%20%E2%99%AA(%C2%B4%E2%96%BD%EF%BD%80)%E3%80%82%E8%99%BD%E7%84%B6%E5%BE%88%E6%A3%92%EF%BC%8C%E4%BD%86%E8%A2%AB%E7%9F%A5%E8%AF%86%E5%A1%AB%E6%BB%A1%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E6%9B%B4%E5%8A%A0%E5%BF%AB%E4%B9%90%E5%91%A2%E3%80%82%E8%BF%99%E4%B9%9F%E6%98%AF%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%BA%E7%94%9F%E4%BD%93%E9%AA%8C%E5%90%A7&amp;source=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;armin=armin" target="_blank"></a><a class="social-share-icon icon-diandian" href="http://www.diandian.com/share?lo=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;ti=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;type=link" target="_blank"></a><a class="social-share-icon icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021" target="_blank"></a><a class="social-share-icon icon-twitter" href="https://twitter.com/intent/tweet?text=%E4%B8%80%E5%B9%B4%20%7C%20Davinci%E7%9A%84%E7%BA%A2%E8%8C%B6%E9%A6%86&amp;url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021&amp;via=https%3A%2F%2Fdavincievans.top" target="_blank"></a><a class="social-share-icon icon-google" href="https://plus.google.com/share?url=https%3A%2F%2Fdavincievans.top%2Ffeelings%2F2021" target="_blank"></a></div>
+	<i class="iconfont show-share icon-forward"></i>
+</div>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<section class="post-squares nextprev">
+	<div class="post-nepre half previous">
+		<a href="https://xiarimangguo.github.io/aLive2D" rel="prev"><div class="background lazyload" style="background-image: url(./files/1.jpg);" data-src="./files/1.jpg"></div><span class="label">Previous Post</span><div class="info"><h3>aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ</h3><hr></div></a>	</div>
+	<div class="post-nepre half next">
+		<a href="https://xiarimangguo.github.io/aLive2D/up#" rel="next"><div class="background lazyload" style="background-image: url(./files/2.jpg);" data-src="./files/2.jpg"></div><span class="label">Next Post</span><div class="info"><h3>没有啦～～</h3><hr></div></a>	</div>
+</section>
+	<section class="author-profile">
+		<div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+			<a href="https://github.com/xiarimangguo" class="profile gravatar"><img src="./files/avatar.jpg" itemprop="image" alt="夏日芒果" height="70" width="70"></a>
+			<div class="meta">
+				<span class="title">Author</span>	
+				<h3 itemprop="name">
+					<a href="https://github.com/xiarimangguo" itemprop="url" rel="author">夏日芒果</a>
+				</h3>						
+			</div>
+		</div>
+		<hr>
+		<p><i class="iconfont icon-write"></i><i class="fa fa-quote-left" aria-hidden="true"></i> You Are All Stardust.  <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+	</section>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	</div><!-- #content -->
+	
+	
+	<section id="comments" class="comments">
+<!-- Gitalk -->
+  <link rel="stylesheet" href="./files/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+var gitalk = new Gitalk({
+  clientID: 'b9c5bec932e7cd070f8e', // GitHub Application Client ID
+  clientSecret: '0502fbc766c4b5e737acdcc186f238ea7bea43bb', // GitHub Application Client Secret
+  repo: 'gitalk-comment',      // 存放评论的仓库
+  owner: 'xiarimangguo',          // 仓库的创建者，
+  admin: ['xiarimangguo'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+  id: location.pathname,      // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+})
+gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
+</script>
+	</section>
+	</div><!-- #page Pjax container-->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info" theme-info="Sakura v3.3.7">
+			<div class="footertext">
+				<div class="img-preload">
+					<img src="./files/wordpress-rotating-ball-o.svg">
+					<img src="./files/disqus-preloader.svg">
+				</div>
+				<p style="color: #666666;">© 2018-2021  by 夏日芒果<br>
+<a href="https://xiarimangguo.github.io/aLive2D/sitemap.xml">SiteMap</a></p>
+			</div>
+			<div class="footer-device">
+			<p style="font-family: &#39;Ubuntu&#39;, sans-serif;">
+					<span style="color: #b9b9b9;">
+												Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
+					</span>
+				</p>
+			</div>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+	<div class="openNav no-select">
+		<div class="iconflat no-select">	 
+			<div class="icon"></div>
+		</div>
+		<div class="site-branding">
+						<h1 class="site-title"><a href="https://xiarimangguo.github.io/aLive2D/">夏日芒果の小屋</a></h1>
+					</div>
+	</div><!-- m-nav-bar -->
+	</section><!-- #section -->
+	<!-- m-nav-center -->
+	<div id="mo-nav">
+		<div class="m-avatar">
+						<img src="./files/avatar.jpg">
+		</div>
+		<div class="m-search">
+			<form class="m-search-form" method="get" action="https://xiarimangguo.github.io/aLive2D/" role="search">
+				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required="">
+			</form>
+		</div>
+		<ul id="menu-menu-3" class="menu"><li><a href="https://xiarimangguo.github.io/aLive2D/"><span class="faa-parent animated-hover"><i class="fa fa-rocket faa-wrench"></i> 首页</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-code faa-horizontal"></i>  极客</span></a></li>
+<li><a><span class="faa-parent animated-hover"><i class="fa fa-leaf faa-tada"></i>  生活</span></a>
+<ul class="sub-menu">
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-music"></i> 音乐</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-anchor"></i> 二次元</a></li>
+	<li class="current-post-ancestor current-menu-parent"><a href="https://xiarimangguo.github.io/aLive2D/feelings/"><i class="fa fa-smile-o"></i>  有感</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-cutlery"></i> 日常</a></li>
+</ul>
+</li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-quote-right faa-tada"></i>  BB</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-pencil faa-shake"></i> 留言板</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-link faa-shake" aria-hidden="true"></i> 邻居</span></a></li>
+<li><a href="https://xiarimangguo.github.io/aLive2D#"><span class="faa-parent animated-hover"><i class="fa fa-star faa-burst"></i> 关于</span></a>
+<ul class="sub-menu">
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-child"></i> 我？</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-thumbs-up"></i> 投喂</a></li>
+	<li><a href="https://xiarimangguo.github.io/aLive2D#"><i class="fa fa-feed"></i> RSS</a></li>
+</ul>
+</li>
+</ul>	</div><!-- m-nav-center end -->
+	<a class="cd-top faa-float animated" style="top: -999px;"></a>
+	<button onclick="topFunction()" id="moblieGoTop" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+	<!-- search start -->
+	<form class="js-search search-form search-form--modal" method="get" action="https://xiarimangguo.github.io/aLive2D/" role="search">
+		<div class="search-form__inner">
+					<div class="micro">
+				<i class="iconfont icon-search"></i>
+				<input id="search-input" class="text-input" type="search" name="s" placeholder="想要找点什么呢？" required="">
+			</div>
+			<div class="ins-section-wrapper">
+                <a id="Ty" href="https://xiarimangguo.github.io/aLive2D/#"></a>
+                <div class="ins-section-container" id="PostlistBox"></div>
+            </div>
+				</div>
+		<div class="search_close"></div>
+	</form>
+	<!-- search end -->
+            <div id="landlord">
+                <div class="message" style="opacity:0"></div>
+                <canvas id="live2d" width="280" height="250" class="live2d" style="opacity:0;"></canvas>
+                <div class="hide-button">隐藏</div>
+                <div class="switch-button">变装</div>
+            </div>
+        <script type="text/javascript" src="./files/jquery.min.js" id="jQuery-CDN-js"></script>
+<script type="text/javascript" src="./files/katex.min.js" id="Katex-js"></script>
+<script type="text/javascript" src="./files/emojify.min.js" id="Emojify.js-js"></script>
+<script type="text/javascript" src="./files/lib.min.js" id="js_lib-js"></script><canvas width="1556" height="624" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas>
+<script type="text/javascript" id="app-js-extra">
+/* <![CDATA[ */
+var Poi = {"pjax":"1","movies":"close","windowheight":"auto","codelamp":"close","ajaxurl":"https:\/\/davincievans.top\/wp-admin\/admin-ajax.php","order":"desc","formpostion":"bottom","reply_link_version":"new","api":"https:\/\/davincievans.top\/wp-json\/","nonce":"619f2fa12e","google_analytics_id":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./files/sakura-app.js" id="app-js"></script><link rel="stylesheet" href="./files/lib.min.css" media="all"><link rel="stylesheet" href="./files/sakura.css" media="all"><link rel="stylesheet" href="./files/font_679578_qyt5qzzavdo39pb9.css" media="all"><link rel="stylesheet" href="./files/APlayer.min.css" media="all"><link rel="stylesheet" href="./files/css" media="all"><canvas width="1556" height="624" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas>
+<script type="text/javascript" src="./files/widget.js" id="github_card-js"></script>
+<script type="text/javascript" src="./files/comment-reply.min.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="./files/wp-embed.min.js" id="wp-embed-js"></script>
+<script defer="" type="text/javascript" src="./files/form.js" id="akismet-form-js"></script>
+        <script type="text/javascript">
+            (function ($) {
+                $(document).ready(function () {
+                    $(".katex.math.inline").each(function () {
+                        var parent = $(this).parent()[0];
+                        if (parent.localName !== "code") {
+                            var texTxt = $(this).text();
+                            var el = $(this).get(0);
+                            try {
+                                katex.render(texTxt, el);
+                            } catch (err) {
+                                $(this).html("<span class=\'err\'>" + err);
+                            }
+                        } else {
+                            $(this).parent().text($(this).parent().text());
+                        }
+                    });
+                    $(".katex.math.multi-line").each(function () {
+                        var texTxt = $(this).text();
+                        var el = $(this).get(0);
+                        try {
+                            katex.render(texTxt, el, {displayMode: true})
+                        } catch (err) {
+                            $(this).html("<span class=\'err\'>" + err)
+                        }
+                    });
+                })
+            })(jQuery);
+        </script>
+				<script type="text/javascript">
+            window.onload = function () {
+                emojify.setConfig({
+                    img_dir: "https://cdn.jsdelivr.net/wp/wp-editormd/tags/10.1.0/assets/Emojify.js/images/basic",//前端emoji资源地址
+                    blacklist: {
+                        'ids': [],
+                        'classes': ['no-emojify'],
+                        'elements': ['^script$', '^textarea$', '^pre$', '^code$']
+                    }
+                });
+                emojify.run();
+            }
+		</script>
+		<div class="changeSkin-gear no-select" style="bottom: -999px;">
+    <div class="keys">
+        <span id="open-skinMenu">
+		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL 
+        </span>
+    </div>
+</div>
+<div class="skin-menu no-select">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg">
+                <i class="fa fa-television" aria-hidden="true"></i>
+            </li><!--Default-->
+            <li id="sakura-bg">
+                <i class="iconfont icon-sakura"></i>
+            </li><!--Sakura-->
+            <li id="gribs-bg">
+                <i class="fa fa-slack" aria-hidden="true"></i>
+            </li><!--Grids-->
+            <li id="KAdots-bg">
+                <i class="iconfont icon-dots"></i>
+            </li><!--Dots-->
+            <li id="totem-bg">
+                <i class="fa fa-superpowers" aria-hidden="true"></i>
+            </li><!--Orange-->
+            <li id="pixiv-bg">
+                <i class="iconfont icon-pixiv"></i>
+            </li><!--Start-->
+            <li id="bing-bg">
+                <i class="iconfont icon-bing"></i>
+            </li><!--Bing-->
+            <li id="dark-bg">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </li><!--Night-->
+        </ul>
+    </div>
+    <div class="font-family-controls row-container">
+        <button type="button" class="control-btn-serif selected" data-mode="serif" onclick="mashiro_global.font_control.change_font()">Serif</button>
+        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+	<aside id="secondary" class="widget-area" role="complementary" style="left: -400px;">
+    <div class="heading">小工具</div>
+    <div class="sakura_widget">
+	<div class="widget widget_media_image"><div class="title"><h2>Galaxy</h2></div><a href="https://xiarimangguo.github.io/aLive2D/"><img width="300" height="169" src="./files/94a8daf72f7f4b80052a4ba8889258444fe37783_raw-300x169.jpg" class="image wp-image-5572  attachment-medium size-medium" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://gallery.davincievans.top/wp-content/uploads/2019/11/94a8daf72f7f4b80052a4ba8889258444fe37783_raw-300x169.jpg 300w, https://gallery.davincievans.top/wp-content/uploads/2019/11/94a8daf72f7f4b80052a4ba8889258444fe37783_raw-768x432.jpg 768w, https://gallery.davincievans.top/wp-content/uploads/2019/11/94a8daf72f7f4b80052a4ba8889258444fe37783_raw.jpg 960w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="widget widget_rss"><div class="title"><h2><a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="./files/rss.png" alt="RSS"></a> <a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/">快速浏览</a></h2></div><ul><li><a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/tech/thread-save-link-list">使用线程安全型双向链表实现简单 LRU Cache 模拟</a></li><li><a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/lives/fumo%C2%B2-reimu">Fumo² Reimu!</a></li><li><a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/">一年</a></li><li><a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/tech/pca">PCA 算法实现人脸识别</a></li><li><a class="rsswidget" href="https://xiarimangguo.github.io/aLive2D/tech/vue-and-flask">使用 Vue 和 Flask 实现的前后端分离</a></li></ul></div>	</div>
+	<div class="show-hide-wrap"><button class="show-hide"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z"></path></svg></button></div>
+    </aside>
+    <div id="aplayer-float" style="z-index: 100;" class="aplayer aplayer-withlist aplayer-fixed aplayer-narrow" data-id="3020604836" data-server="netease" data-type="playlist" data-fixed="true" data-theme="orange">
+<div class="aplayer-list aplayer-list-hide" style="max-height: 250px">
+    <ol style="max-height: 250px">
+        
+<li class="aplayer-list-light">
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">1</span>
+    <span class="aplayer-list-title">上海紅茶館</span>
+    <span class="aplayer-list-author">天門</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">2</span>
+    <span class="aplayer-list-title">狂言「九十九星降」</span>
+    <span class="aplayer-list-author">凋叶棕</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">3</span>
+    <span class="aplayer-list-title">Rapid as Wildfires 疾如猛火</span>
+    <span class="aplayer-list-author">陈致逸 / HOYO-MiX</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">4</span>
+    <span class="aplayer-list-title">Liyue 璃月</span>
+    <span class="aplayer-list-author">陈致逸 / HOYO-MiX</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">5</span>
+    <span class="aplayer-list-title">欲望之音色</span>
+    <span class="aplayer-list-author">凋叶棕</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">6</span>
+    <span class="aplayer-list-title">華鳥風月 (Orchestral version)</span>
+    <span class="aplayer-list-author">幽閉サテライト</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">7</span>
+    <span class="aplayer-list-title">先生、今年の7月24日は晴でした</span>
+    <span class="aplayer-list-author">流派未階堂</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">8</span>
+    <span class="aplayer-list-title">秋姉妹のなく顷に</span>
+    <span class="aplayer-list-author">ばんばんしー</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">9</span>
+    <span class="aplayer-list-title">月に叢雲華に風 (Orchestral version)</span>
+    <span class="aplayer-list-author">交響アクティブNEETs</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">10</span>
+    <span class="aplayer-list-title">明日ハレの日、ケの昨日</span>
+    <span class="aplayer-list-author">まらしぃ</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">11</span>
+    <span class="aplayer-list-title">雲流れ</span>
+    <span class="aplayer-list-author">みかん箱 / Foxtail-Grass Studio</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">12</span>
+    <span class="aplayer-list-title">上海紅茶館</span>
+    <span class="aplayer-list-author">交響アクティブNEETs</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">13</span>
+    <span class="aplayer-list-title">ようこそ喫茶紅魔館へ</span>
+    <span class="aplayer-list-author">狐の工作室</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">14</span>
+    <span class="aplayer-list-title">明治十七年の上海アリス</span>
+    <span class="aplayer-list-author">ファクトリー・ノイズ&amp;AG</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">15</span>
+    <span class="aplayer-list-title">東方緋想天</span>
+    <span class="aplayer-list-author">溝口哲也</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">16</span>
+    <span class="aplayer-list-title">天衣无缝</span>
+    <span class="aplayer-list-author">狐の工作室</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">17</span>
+    <span class="aplayer-list-title">夜、萤火虫和你</span>
+    <span class="aplayer-list-author">AniFace</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">18</span>
+    <span class="aplayer-list-title">天狗舞踏会</span>
+    <span class="aplayer-list-author">Foxtail-Grass Studio</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">19</span>
+    <span class="aplayer-list-title">幽雅に咲かせ、墨染の桜</span>
+    <span class="aplayer-list-author">TAMUSIC</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">20</span>
+    <span class="aplayer-list-title">恋色マスタースパーク</span>
+    <span class="aplayer-list-author">交響アクティブNEETs</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">21</span>
+    <span class="aplayer-list-title">少女綺想曲 ~ Dream Battle</span>
+    <span class="aplayer-list-author">交響アクティブNEETs</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">22</span>
+    <span class="aplayer-list-title">A Little Story</span>
+    <span class="aplayer-list-author">Valentin</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">23</span>
+    <span class="aplayer-list-title">My Soul</span>
+    <span class="aplayer-list-author">July</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">24</span>
+    <span class="aplayer-list-title">三年幻想郷</span>
+    <span class="aplayer-list-author">神乃木製作所</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">25</span>
+    <span class="aplayer-list-title">Intro</span>
+    <span class="aplayer-list-author">The xx</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">26</span>
+    <span class="aplayer-list-title">China-X</span>
+    <span class="aplayer-list-author">徐梦圆</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">27</span>
+    <span class="aplayer-list-title">Pneumatic Tokyo</span>
+    <span class="aplayer-list-author">EnV</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">28</span>
+    <span class="aplayer-list-title">The&nbsp;truth&nbsp;that&nbsp;you&nbsp;leave</span>
+    <span class="aplayer-list-author">Pianoboy高至豪</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">29</span>
+    <span class="aplayer-list-title">東方緋想天</span>
+    <span class="aplayer-list-author">黄昏フロンティア / 上海アリス幻樂団</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">30</span>
+    <span class="aplayer-list-title">Immortals</span>
+    <span class="aplayer-list-author">Fall Out Boy</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">31</span>
+    <span class="aplayer-list-title">Reburn</span>
+    <span class="aplayer-list-author">茶理理</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">32</span>
+    <span class="aplayer-list-title">「双眼」</span>
+    <span class="aplayer-list-author">DMYoung</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">33</span>
+    <span class="aplayer-list-title">secret base ~君がくれたもの~ (10 years after Ver.)</span>
+    <span class="aplayer-list-author">茅野愛衣 / 戸松遥 / 早見沙織</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">34</span>
+    <span class="aplayer-list-title">Shape of You</span>
+    <span class="aplayer-list-author">Ed Sheeran</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">35</span>
+    <span class="aplayer-list-title">華鳥風月(with senya) &lt;幻想万華鏡 花の異変の章 OP主題歌&gt;</span>
+    <span class="aplayer-list-author">森永真由美</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">36</span>
+    <span class="aplayer-list-title">Dream It Possible</span>
+    <span class="aplayer-list-author">Delacey</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">37</span>
+    <span class="aplayer-list-title">勾指起誓</span>
+    <span class="aplayer-list-author">洛天依 / ilem</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">38</span>
+    <span class="aplayer-list-title">Something Just Like This</span>
+    <span class="aplayer-list-author">The Chainsmokers / Coldplay</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">39</span>
+    <span class="aplayer-list-title">童祭　～ Innocent Treasures</span>
+    <span class="aplayer-list-author">交響アクティブNEETs</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: orange;"></span>
+    <span class="aplayer-list-index">40</span>
+    <span class="aplayer-list-title">Rage Your Dream</span>
+    <span class="aplayer-list-author">m.o.v.e</span>
+</li>
+
+    </ol>
+</div>
+<div class="aplayer-body ap-hover" style="width: 400px;">
+    <div class="aplayer-pic" style="background-image: url(&quot;https://api.i-meto.com/meting/api?server=netease&amp;type=pic&amp;id=109951163024935905&amp;auth=e287b5314ecd358d24777bac097b7748e70c4f64&quot;);background-color: orange;">
+        <div class="aplayer-button aplayer-play"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 31"><path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"></path></svg></div>
+    </div>
+    <div class="aplayer-info" style="display: block;">
+        <div class="aplayer-music">
+            <span class="aplayer-title">上海紅茶館</span>
+            <span class="aplayer-author"> - 天門</span>
+        </div>
+        <div class="aplayer-controller">
+            <div class="aplayer-bar-wrap">
+                <div class="aplayer-bar">
+                    <div class="aplayer-loaded" style="width: 38.3642%;"></div>
+                    <div class="aplayer-played" style="width: 0; background: orange;">
+                        <span class="aplayer-thumb" style="background: orange;">
+                            <span class="aplayer-loading-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M4 16c0-6.6 5.4-12 12-12s12 5.4 12 12c0 1.2-0.8 2-2 2s-2-0.8-2-2c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.2 0 2 0.8 2 2s-0.8 2-2 2c-6.6 0-12-5.4-12-12z"></path></svg></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="aplayer-time aplayer-time-narrow">
+                <span class="aplayer-time-inner">
+                    <span class="aplayer-ptime">00:00</span> / <span class="aplayer-dtime">03:34</span>
+                </span>
+                <span class="aplayer-icon aplayer-icon-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M25.468 6.947c-0.326-0.172-0.724-0.151-1.030 0.057l-6.438 4.38v-3.553c0-0.371-0.205-0.71-0.532-0.884-0.326-0.172-0.724-0.151-1.030 0.057l-12 8.164c-0.274 0.186-0.438 0.496-0.438 0.827s0.164 0.641 0.438 0.827l12 8.168c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-3.556l6.438 4.382c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-16.333c0-0.371-0.205-0.71-0.532-0.884z"></path></svg>
+                </span>
+                <span class="aplayer-icon aplayer-icon-play">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 31"><path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"></path></svg>
+                </span>
+                <span class="aplayer-icon aplayer-icon-forward">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M25.468 6.947c-0.326-0.172-0.724-0.151-1.030 0.057l-6.438 4.38v-3.553c0-0.371-0.205-0.71-0.532-0.884-0.326-0.172-0.724-0.151-1.030 0.057l-12 8.164c-0.274 0.186-0.438 0.496-0.438 0.827s0.164 0.641 0.438 0.827l12 8.168c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-3.556l6.438 4.382c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-16.333c0-0.371-0.205-0.71-0.532-0.884z"></path></svg>
+                </span>
+                <div class="aplayer-volume-wrap">
+                    <button type="button" class="aplayer-icon aplayer-icon-volume-down"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 32"><path d="M13.728 6.272v19.456q0 0.448-0.352 0.8t-0.8 0.32-0.8-0.32l-5.952-5.952h-4.672q-0.48 0-0.8-0.352t-0.352-0.8v-6.848q0-0.48 0.352-0.8t0.8-0.352h4.672l5.952-5.952q0.32-0.32 0.8-0.32t0.8 0.32 0.352 0.8zM20.576 16q0 1.344-0.768 2.528t-2.016 1.664q-0.16 0.096-0.448 0.096-0.448 0-0.8-0.32t-0.32-0.832q0-0.384 0.192-0.64t0.544-0.448 0.608-0.384 0.512-0.64 0.192-1.024-0.192-1.024-0.512-0.64-0.608-0.384-0.544-0.448-0.192-0.64q0-0.48 0.32-0.832t0.8-0.32q0.288 0 0.448 0.096 1.248 0.48 2.016 1.664t0.768 2.528z"></path></svg></button>
+                    <div class="aplayer-volume-bar-wrap">
+                        <div class="aplayer-volume-bar">
+                            <div class="aplayer-volume" style="height: 70%; background: orange;"></div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="aplayer-icon aplayer-icon-order">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M0.622 18.334h19.54v7.55l11.052-9.412-11.052-9.413v7.549h-19.54v3.725z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-loop">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 29 32"><path d="M9.333 9.333h13.333v4l5.333-5.333-5.333-5.333v4h-16v8h2.667v-5.333zM22.667 22.667h-13.333v-4l-5.333 5.333 5.333 5.333v-4h16v-8h-2.667v5.333z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 22 32"><path d="M20.8 14.4q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2zM1.6 11.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2zM20.8 20.8q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-lrc">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M26.667 5.333h-21.333c-0 0-0.001 0-0.001 0-1.472 0-2.666 1.194-2.666 2.666 0 0 0 0.001 0 0.001v-0 16c0 0 0 0.001 0 0.001 0 1.472 1.194 2.666 2.666 2.666 0 0 0.001 0 0.001 0h21.333c0 0 0.001 0 0.001 0 1.472 0 2.666-1.194 2.666-2.666 0-0 0-0.001 0-0.001v0-16c0-0 0-0.001 0-0.001 0-1.472-1.194-2.666-2.666-2.666-0 0-0.001 0-0.001 0h0zM5.333 16h5.333v2.667h-5.333v-2.667zM18.667 24h-13.333v-2.667h13.333v2.667zM26.667 24h-5.333v-2.667h5.333v2.667zM26.667 18.667h-13.333v-2.667h13.333v2.667z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="aplayer-notice"></div>
+    <div class="aplayer-miniswitcher"><button class="aplayer-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z"></path></svg></button></div>
+</div>
+<div class="aplayer-lrc aplayer-lrc-hide">
+    <div class="aplayer-lrc-contents" style="transform: translateY(0); -webkit-transform: translateY(0);"></div>
+</div>
+</div>
+
+
+
+<!-- Dynamic page generated in 0.544 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-08-10 18:49:49 -->
+
+<!-- super cache --></body></html>
