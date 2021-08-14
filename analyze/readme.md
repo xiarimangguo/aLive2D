@@ -138,5 +138,7 @@ https://xiarimangguo.github.io/aLive2D
 
 - 根据自己的需要设定参数即可
 
+**也欢迎来查看我的其他项目呀**
+[xiarimangguo/alive2D: aLive2D! 一个萌萌哒 Live2D API o(*≧▽≦)ツ 快来向web页面添加可爱的看板娘吧～](https://github.com/xiarimangguo/aLive2D)
+[![GitHub Repo stars](https://img.shields.io/github/stars/xiarimangguo/aLive2D?style=social)](https://github.com/xiarimangguo/aLive2D)
 
- **如果你喜欢，别忘了为我点亮star呢～～** 
