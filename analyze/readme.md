@@ -111,8 +111,16 @@ document.write(0)
 - ##### reset #####
 重置当前页面的计数
 
+```
+https://91.90.194.171/analyze/counter.asp?Datatype=txt&Method=reset&Page=Your_Url
+```
+
 - ##### readonly #####
 设置当前页面计数为只读
+
+```
+https://91.90.194.171/analyze/counter.asp?Datatype=txt&Method=readonly&Page=Your_Url
+```
 
 #### Page ####
 必填，填写要统计的页面的URL
